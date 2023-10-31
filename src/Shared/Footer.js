@@ -7,7 +7,7 @@ const SITEMAP = [
     title: "Company",
     links: ["About Us", "Careers", "Success"],
     herfTag: [
-      "https://example.com/about-us",
+      "/aboutus",
       "https://example.com/careers",
       "https://example.com/success",
     ],

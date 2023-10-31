@@ -5,6 +5,7 @@ import ImageDisplay from "@/UI/Advertise";
 const Home = () => {
   return (
     <div className="">
+      <title>Home || Hafejia Travel Tours</title>
       <HomePage></HomePage>
     </div>
   );

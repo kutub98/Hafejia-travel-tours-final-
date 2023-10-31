@@ -26,40 +26,43 @@ import logo from "../Assets/logo.jpg";
 const navListMenuItems = [
   {
     title: "Hafezia Travel",
+    link: "/aboutus",
   },
   {
     title: "Why Hafezia Travel",
+    link: "#",
   },
   {
     title: "Travel Guide",
+    link: "#",
   },
   {
     title: "News",
+    link: "#",
   },
   {
     title: "FAQ And Support",
+    link: "#",
   },
 ];
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <div className="flex items-center gap-3 rounded-lg">
-          <div>
-            <Typography
-              color="white"
-              className="flex items-center ml-2 customHover px-2 py-2 rounded "
-            >
-              {title}
-            </Typography>
-          </div>
+  const renderItems = navListMenuItems.map(({ icon, title, link }, key) => (
+    <a href={link} key={key}>
+      <div className="flex items-center gap-3 rounded-lg">
+        <div>
+          <Typography
+            color="white"
+            className="flex items-center ml-2 customHover px-2 py-2 rounded "
+          >
+            {title}
+          </Typography>
         </div>
-      </a>
-    ),
-  );
+      </div>
+    </a>
+  ));
 
   return (
     <React.Fragment>
@@ -123,12 +126,23 @@ function NavList() {
         {/* HAZE UMRA  */}
         <Typography
           as="a"
-          href="/hazhUmrah"
+          href="/hazh"
           color="white"
           className="customHover focus:bg-[#54BFB5] focus:text-white"
         >
           <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
-            Hazz & Umrah
+            Hazz
+          </ListItem>
+        </Typography>
+
+        <Typography
+          as="a"
+          href="/umrah"
+          color="white"
+          className="customHover focus:bg-[#54BFB5] focus:text-white"
+        >
+          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
+            Umrah
           </ListItem>
         </Typography>
 

@@ -140,3 +140,7 @@ span {
 .carousel.carousel-slider {
   overflow: visible !important;
 }
+
+.removeBackgournd {
+  background: none !important;
+}

@@ -21,9 +21,6 @@ import Image from "next/image";
 const OurService = () => {
   return (
     <div className="container max-w-7xl mx-auto my">
-      <h1 className="text-center lg:text-5xl font-bold xl:mt-36 lg:mt-36 animate-pulse text-3xl my-10">
-        Our Service
-      </h1>
       <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8">
         <Card className="my-6 ">
           <CardHeader color="blue-gray" className="relative h-56">
