@@ -168,6 +168,17 @@ function NavList() {
             Package
           </ListItem>
         </Typography>
+        {/* AirTicke  */}
+        <Typography
+          as="a"
+          href="/airTicket"
+          color="white"
+          className="customHover focus:bg-[#54BFB5] focus:text-white"
+        >
+          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+            Air Ticket
+          </ListItem>
+        </Typography>
 
         {/* police clearence  */}
         <Typography
