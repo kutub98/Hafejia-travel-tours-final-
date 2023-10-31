@@ -170,9 +170,7 @@ const Rootlayout = ({ children }) => {
           href="https://www.facebook.com/HafeziaTravelsLohagara"
           target="_blank"
         >
-          <BsFacebook
-            className="h-10 w-10 hover:scale-105  text-[#3b5998] mx-auto my-2"
-          />
+          <BsFacebook className="h-10 w-10 hover:scale-105  text-[#3b5998] mx-auto my-2" />
         </Link>
       </div>
     </div>
