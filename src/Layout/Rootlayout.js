@@ -164,10 +164,9 @@ const Rootlayout = ({ children }) => {
           isVisible ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <Tooltip content="Hide">
+        <Tooltip content="Hide" onClick={() => setClickToHide(false)}>
           <XMarkIcon
-            onClick={() => setClickToHide(false)}
-            className={`block`}
+          className={`block`}
           ></XMarkIcon>
         </Tooltip>
         <Link
