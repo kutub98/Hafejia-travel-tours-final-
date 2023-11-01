@@ -2,7 +2,10 @@
 "use client";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import packge1 from "../Assets/Package2.jpg"
+import packge2 from "../Assets/Package3.jpg"
+import packge3 from "../Assets/HappyClients/image21.jpeg"
+import Image from "next/image";
 const HeroSection = () => {
   return (
     <Carousel
@@ -15,23 +18,23 @@ const HeroSection = () => {
       className="container mx-auto px-5"
     >
       <div className="">
-        <img
-          src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?auto=format&fit=crop&q=80&w=1411&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="h-96 w-full object-cover"
+        <Image
+          src={packge3}
+          alt="image 3 "
+          className="lg:h-[460px] h-80 w-full object-fit"
+        />
+      </div>
+      <div className="">
+        <Image
+          src={packge2}
+          className="lg:h-[460px] h-80 w-full object-fit"
           alt="image 3"
         />
       </div>
       <div className="">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1679758629770-24b3b6de388c?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="h-96 w-full object-cover"
-          alt="image 3"
-        />
-      </div>
-      <div className="">
-        <img
-          src="https://images.unsplash.com/photo-1437846972679-9e6e537be46e?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="h-96 w-full object-cover"
+        <Image
+          src={packge1}
+          className="lg:h-[460px] h-80 w-full object-fit"
           alt="image 3"
         />
       </div>

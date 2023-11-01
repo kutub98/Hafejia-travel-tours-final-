@@ -2,13 +2,14 @@ import { Footer } from "@/Shared/Footer";
 import NavBar from "@/Shared/NavBar";
 import ImageDisplay from "@/UI/Advertise";
 
-import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowUpCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Button,
   Drawer,
   IconButton,
   Input,
   Textarea,
+  Tooltip,
   Typography,
 } from "@material-tailwind/react";
 import Link from "next/link";
@@ -46,7 +47,11 @@ const Rootlayout = ({ children }) => {
 
   // social Media scroll
   const [isVisible, setIsVisible] = useState(true); // Initially visible
+  const [clickToHide, setClickToHide] = useState(true);
 
+  const HideSocialMedia = ()=>{
+    setIsVisible(false)
+  }
   useEffect(() => {
     let isScrolling = false;
     let scrollTimeout;
@@ -108,7 +113,7 @@ const Rootlayout = ({ children }) => {
       </div>
 
       {/* Drawer section */}
-      <div className="fixed right-2 cursor-pointer bottom-16">
+      <div className="fixed right-2 cursor-pointer bottom-4">
         <IoChatboxOutline
           onClick={openDrawer}
           className="h-10 w-10  hover:scale-105 text-black bg-white rounded"
@@ -153,11 +158,16 @@ const Rootlayout = ({ children }) => {
       </div>
 
       {/* social scroll handle  */}
-      <div
-        className={`block h-28 px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded top-1/3 z-auto transition-all duration-300 ${
+      <div  onClick={() => HideSocialMedia()}
+        className={`block  px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded bottom-16 z-auto transition-all duration-300 ${
           isVisible ? "translate-x-0" : "translate-x-full"
         }`}
       >
+
+
+        <Tooltip content="Hide">
+<XMarkIcon  onClick={() => setClickToHide(false)} className={`block`}></XMarkIcon>
+        </Tooltip>
         <Link
           href="https://wa.me/88001867158067"
           target="_blank"

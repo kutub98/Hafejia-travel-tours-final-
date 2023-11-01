@@ -1,19 +1,31 @@
-/* eslint-disable @next/next/no-img-element */
-"use client";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardHeader,
-  Typography,
-} from "@material-tailwind/react";
 
+import image15 from "../Assets/HappyClients/image21.jpeg";
+import image16 from "../Assets/Package3.jpg";
+import image17 from "../Assets/Package2.jpg";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Button, Card, CardBody, CardHeader, Typography } from "@material-tailwind/react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
 const Packge = () => {
+  
+  const ClinetImage = [
+  
+    {
+      imgSrc: image15,
+    },
+    {
+      imgSrc: image16,
+    },
+    {
+      imgSrc: image17,
+    },
+  ];
+
   return (
-    <div className="container mx-auto max-w-7xl mb-10 px-8">
-      <h1 className="xl:mb-24 lg:mb-34 lg:mt-36 xl:mt-36 animate-pulse text-center lg:text-5xl lg:font-bold text-3xl ">
+    //
+    <div className="container mx-auto max-w-7xl px-8">
+      <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
         Recent Package
       </h1>
 
@@ -22,20 +34,23 @@ const Packge = () => {
         infiniteLoop={true}
         showStatus={false}
         showThumbs={false}
+        interval={10000}
         swipeable={false}
-        interval={10000} // 5 seconds
-        className="container mx-auto"
+        className="container"
       >
-        <Card className="w-full  lg:flex-row flex-col">
-          <CardHeader
+        {ClinetImage.map((item, index) => (
+          <div key={index} className="">
+            <div className="">
+            <Card className="w-full lg:flex-row flex-col">
+         <CardHeader
             shadow={false}
             floated={false}
-            className="m-0 lg:w-2/5 w-full  shrink-0 rounded-r-none"
+            className="m-0 lg:w-2/5 w-full  h-72  shrink-0 rounded-r-none"
           >
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            <Image
+              src={item.imgSrc}
               alt="card-image"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-fit"
             />
           </CardHeader>
           <CardBody>
@@ -47,12 +62,10 @@ const Packge = () => {
             </Typography>
             <Typography color="gray" className="mb-8 font-normal">
               Like so many organizations these days, Autodesk is a company in
-              transition. It was until recently a traditional boxed software
-              company selling licenses. Yet its own business model disruption is
-              only part of the story
+              transition. 
             </Typography>
-            <a href="#" className="inline-block">
-              <Button variant="text" className="flex items-center gap-2">
+            <a href="#" className="inline-block bg-[#54bfb5] rounded">
+              <Button variant="text" className="flex items-center gap-2 text-white">
                 Learn More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +85,9 @@ const Packge = () => {
             </a>
           </CardBody>
         </Card>
+            </div>
+          </div>
+        ))}
       </Carousel>
     </div>
   );

@@ -81,12 +81,12 @@ const HotDeals = () => {
               {items
                 .slice(index * 1, index * 1 + (windowWidth < 740 ? 1 : 2))
                 .map((image, i) => (
-                  <div className="" key={i}>
+                  <div  key={i} className="">
                     <Card className=" lg:flex-row flex-col">
                       <CardHeader
                         shadow={false}
                         floated={false}
-                        className="m-0 lg:w-2/5 w-full shrink-0 rounded-r-none"
+                        className="m-0 lg:w-2/5 w-full h-64 shrink-0 rounded-r-none"
                       >
                         <Image
                           src={image.imgSrc}
@@ -94,7 +94,7 @@ const HotDeals = () => {
                           className="h-full w-full object-cover"
                         />
                       </CardHeader>
-                      <CardBody>
+                      <CardBody className="h-64">
                         <Typography
                           variant="h6"
                           color="gray"
@@ -111,10 +111,7 @@ const HotDeals = () => {
                         </Typography>
                         <Typography color="gray" className="mb-8 font-normal">
                           Like so many organizations these days, Autodesk is a
-                          company in transition. It was until recently a
-                          traditional boxed software company selling licenses.
-                          Yet its own business model disruption is only part of
-                          the story
+                          company in transition. 
                         </Typography>
                         <a href="#" className="inline-block">
                           <Button

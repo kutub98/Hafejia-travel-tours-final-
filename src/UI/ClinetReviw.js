@@ -137,7 +137,7 @@ const ClientReview = () => {
                     index * 1,
                     index * 1 + (windowWidth < 740 ? 1 : 2),
                   ).map((image, i) => (
-                    <div className="" key={i}>
+                    <div className="" key={i} >
                       <Card className="w-full lg:flex-row flex-col items-center px-5">
                         <CardHeader
                           shadow={false}
@@ -150,7 +150,7 @@ const ClientReview = () => {
                             className="h-full w-full rounded-full object-cover border-1"
                           />
                         </CardHeader>
-                        <CardBody className="">
+                        <CardBody className="relative">
                           <Typography
                             variant="h6"
                             color="gray"
@@ -173,7 +173,7 @@ const ClientReview = () => {
                             Like so many organizations these days, Autodesk is a
                             company in transition.
                           </Typography>
-                          <div className="5 flex items-center gap-0  right-6  bottom-10">
+                          <div className=" absolute flex gap-0  lg:right-6  bottom-4">
                             <StarIcon />
                             <StarIcon />
                             <StarIcon />
