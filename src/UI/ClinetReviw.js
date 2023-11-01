@@ -137,7 +137,7 @@ const ClientReview = () => {
                     index * 1,
                     index * 1 + (windowWidth < 740 ? 1 : 2),
                   ).map((image, i) => (
-                    <div className="" key={i} >
+                    <div className="" key={i}>
                       <Card className="w-full lg:flex-row flex-col items-center px-5">
                         <CardHeader
                           shadow={false}

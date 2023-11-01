@@ -114,7 +114,7 @@ const HappyClient = () => {
                 index * 1,
                 index * 1 + (windowWidth < 740 ? 1 : 2),
               ).map((image, i) => (
-                <div  key={i} className="h-72">
+                <div key={i} className="h-72">
                   <Card className="h-72">
                     <CardHeader
                       shadow={false}

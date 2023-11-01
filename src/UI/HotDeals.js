@@ -81,7 +81,7 @@ const HotDeals = () => {
               {items
                 .slice(index * 1, index * 1 + (windowWidth < 740 ? 1 : 2))
                 .map((image, i) => (
-                  <div  key={i} className="">
+                  <div key={i} className="">
                     <Card className=" lg:flex-row flex-col">
                       <CardHeader
                         shadow={false}
@@ -111,7 +111,7 @@ const HotDeals = () => {
                         </Typography>
                         <Typography color="gray" className="mb-8 font-normal">
                           Like so many organizations these days, Autodesk is a
-                          company in transition. 
+                          company in transition.
                         </Typography>
                         <a href="#" className="inline-block">
                           <Button

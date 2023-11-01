@@ -2,9 +2,9 @@
 "use client";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import packge1 from "../Assets/Package2.jpg"
-import packge2 from "../Assets/Package3.jpg"
-import packge3 from "../Assets/HappyClients/image21.jpeg"
+import packge1 from "../Assets/Package2.jpg";
+import packge2 from "../Assets/Package3.jpg";
+import packge3 from "../Assets/HappyClients/image21.jpeg";
 import Image from "next/image";
 const HeroSection = () => {
   return (

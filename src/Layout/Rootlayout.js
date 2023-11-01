@@ -49,9 +49,9 @@ const Rootlayout = ({ children }) => {
   const [isVisible, setIsVisible] = useState(true); // Initially visible
   const [clickToHide, setClickToHide] = useState(true);
 
-  const HideSocialMedia = ()=>{
-    setIsVisible(false)
-  }
+  const HideSocialMedia = () => {
+    setIsVisible(false);
+  };
   useEffect(() => {
     let isScrolling = false;
     let scrollTimeout;
@@ -158,15 +158,17 @@ const Rootlayout = ({ children }) => {
       </div>
 
       {/* social scroll handle  */}
-      <div  onClick={() => HideSocialMedia()}
+      <div
+        onClick={() => HideSocialMedia()}
         className={`block  px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded bottom-16 z-auto transition-all duration-300 ${
           isVisible ? "translate-x-0" : "translate-x-full"
         }`}
       >
-
-
         <Tooltip content="Hide">
-<XMarkIcon  onClick={() => setClickToHide(false)} className={`block`}></XMarkIcon>
+          <XMarkIcon
+            onClick={() => setClickToHide(false)}
+            className={`block`}
+          ></XMarkIcon>
         </Tooltip>
         <Link
           href="https://wa.me/88001867158067"
