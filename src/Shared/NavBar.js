@@ -157,8 +157,8 @@ function NavList() {
             Pasport
           </ListItem>
         </Typography>
-        {/* Pasport  */}
-        <Typography
+        {/* Package  */}
+        {/* <Typography
           as="a"
           href="/todayPackage"
           color="white"
@@ -167,7 +167,7 @@ function NavList() {
           <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
             Package
           </ListItem>
-        </Typography>
+        </Typography> */}
         {/* AirTicke  */}
         <Typography
           as="a"

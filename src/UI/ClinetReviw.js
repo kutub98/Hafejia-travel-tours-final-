@@ -125,7 +125,7 @@ const ClientReview = () => {
             infiniteLoop={true}
             showStatus={false}
             showThumbs={false}
-            interval={10000}
+            interval={15000}
             swipeable={false}
             // 5 seconds
             className="conatiner mx-auto grid-cols-4"

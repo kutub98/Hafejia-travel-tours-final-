@@ -103,7 +103,7 @@ const HappyClient = () => {
         infiniteLoop={true}
         showStatus={false}
         showThumbs={false}
-        interval={10000}
+        interval={15000}
         swipeable={false}
         className="container  mx-auto grid-cols-4"
       >

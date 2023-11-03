@@ -165,9 +165,7 @@ const Rootlayout = ({ children }) => {
         }`}
       >
         <Tooltip content="Hide" onClick={() => setClickToHide(false)}>
-          <XMarkIcon
-          className={`block`}
-          ></XMarkIcon>
+          <XMarkIcon className={`block`}></XMarkIcon>
         </Tooltip>
         <Link
           href="https://wa.me/88001867158067"

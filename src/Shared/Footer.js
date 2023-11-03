@@ -1,24 +1,22 @@
 "use client";
+import OfficeLocation from "@/UI/officeLocation";
 import { Typography } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
+
 const SITEMAP = [
   {
     title: "Company",
-    links: ["About Us", "Careers", "Success"],
-    herfTag: [
-      "/aboutus",
-      "https://example.com/careers",
-      "https://example.com/success",
-    ],
+    links: ["About Us", "Our Office", "Success"],
+    herfTag: ["/aboutus", "https://example.com/careers", "/src/UI/Gallery.js"],
   },
   {
     title: "Help Center",
-    links: ["Facebook", "Instagram", "WhatsApp"],
+    links: ["Facebook", "WhatsApp", "Instagram"],
     herfTag: [
       "https://www.facebook.com/search/top?q=hafezia%20tours%20and%20travels",
-      "https://www.instagram.com/",
       "https://wa.me/88001867158067",
+      "https://www.instagram.com/",
     ],
   },
   {
@@ -30,6 +28,12 @@ const SITEMAP = [
       "https://example.com/chunoti-blood-bank",
     ],
   },
+  {
+    title: "Our Office",
+    links: [""],
+    herfTag: ["OFFICE"],
+    div: <OfficeLocation></OfficeLocation>,
+  },
 ];
 
 const currentYear = new Date().getFullYear();
@@ -38,8 +42,8 @@ export function Footer() {
   return (
     <footer className="relative w-full Footer container mx-auto">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2">
-          {SITEMAP.map(({ title, links, herfTag }, key) => (
+        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
+          {SITEMAP.map(({ title, links, herfTag, div }, key) => (
             <div key={key} className="w-full">
               <Link href={herfTag[0]}>
                 <Typography
@@ -68,6 +72,7 @@ export function Footer() {
                   </Typography>
                 ))}
               </ul>
+              {div}
             </div>
           ))}
         </div>

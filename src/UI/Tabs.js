@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import AllService from "./AllService";
-import Hazh from "@/pages/hazh";
-import Umrah from "@/pages/umrah";
-import Passport from "@/pages/passport";
+
+import OurService from "./OurService";
+import Hazh from "./HazhRequirement";
+import Umrah from "./UmrahRequirement";
+import Airticket from "./AirticketRequirement";
+import Passport from "./PassportRequiremts";
 function CustomTabs() {
   const tabs = [
-    { label: "All", content: <AllService></AllService> },
+    // { label: "All", content: <OurService/> },
     { label: "Hazh", content: <Hazh></Hazh> },
     { label: "Umrah", content: <Umrah></Umrah> },
+    { label: "Ticket", content: <Airticket></Airticket> },
     { label: "Passport", content: <Passport></Passport> },
   ];
 
@@ -18,19 +21,19 @@ function CustomTabs() {
   };
 
   return (
-    <div className="container mx-auto  my-4  lg:my-24">
-      <div className="max-w-7xl w-full">
-        <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
+    <div className="container   mx-auto  my-4  lg:my-24">
+      <div className="max-w-7xl w-full mx-auto">
+        <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-16 animate-pulse text-3xl my-10">
           Our Services
         </h1>
-        <div className="  flex xl:justify-between justify-between md:justify-center ">
+        <div className=" mx-auto flex xl:justify-between justify-between md:justify-center ">
           <h1 className=" lg:text-left sm:text-center  text-2xl sm:text-4xl font-semibold "></h1>
 
-          <ul className="w-full sm:w-96 flex justify-start  sm:justify-start md:jus 4 my-2 bg-[#f1f3f3] shadow-md  p-2 rounded">
+          <ul className=" lg:w-[480px]  w-auto overflow-hidden flex justify-start  sm:justify-start  my-2 bg-[#f1f3f3] shadow-md  p-2 rounded">
             {tabs.map((tab, index) => (
               <li
                 key={index}
-                className={`cursor-pointer mx-2 px-2 sm:px-4 py-2 rounded text-center sm:text-right ${
+                className={`mx-auto cursor-pointer  sm:px-4 py-2 rounded text-center sm:text-right ${
                   activeTab === index
                     ? "text-white bg-[#020540] text-lg"
                     : "text-black   text-lg"
@@ -43,12 +46,12 @@ function CustomTabs() {
           </ul>
         </div>
 
-        <div className="w-full my-4 sm:my-8 px-4 sm:px-8">
+        <div className="w-full my-4 sm:my-8 px-4 sm:px-8 Tabs">
           {tabs.map((tab, index) => (
             <div
               key={index}
               className={`${
-                activeTab === index ? "block" : "hidden"
+                activeTab === index ? "block tabsContent" : "hidden"
               } max-w-7xl animate-fade-out mx-auto`}
             >
               {tab.content}

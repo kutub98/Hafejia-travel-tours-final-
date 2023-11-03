@@ -102,15 +102,8 @@ span {
   opacity: 0.5;
 }
 
-.carousel.carousel-slider .control-arrow {
-  top: 50% !important;
-  transform: translate(0%, -50%) !important;
-  color: #fff;
-  background: #020540 !important;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  /* margin-top: 0; */
+.removeBackgournd {
+  background: none !important;
 }
 
 .carousel .control-arrow,
@@ -118,6 +111,7 @@ span {
   transition: all 0.25s ease-in;
   opacity: 1 !important;
   filter: alpha(opacity=40);
+  background: rgba(255, 255, 255, 0.1) !important;
   position: absolute;
   z-index: 2;
   top: 20px;
@@ -127,35 +121,66 @@ span {
   font-size: 300px;
 }
 
-.carousel .control-prev {
-  left: -30px !important;
-  overflow: visible !important;
-  z-index: 100;
-}
-.carousel .control-next {
-  right: -30px !important;
-  overflow: visible !important;
-  z-index: 100;
-}
-
-.carousel.carousel-slider {
-  overflow: visible !important;
-}
-
-.removeBackgournd {
-  background: none !important;
-}
-
-/* 
-@media screen and (min-width: 100px) and (max-width: 660px) {
+@media screen and (min-width: 600px) and (max-width: 1660px) {
   .carousel.carousel-slider .control-arrow {
     top: 50% !important;
     transform: translate(0%, -50%) !important;
     color: #fff;
-    background: #020540 !important;
-    width: 24px;
-    height: 24px;
+    background: #02054025 !important;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-     margin-top: 0; 
+    /* margin-top: 0; */
   }
-} */
+
+  .carousel .control-arrow,
+  .carousel.carousel-slider .control-arrow {
+    transition: all 0.25s ease-in;
+    opacity: 1 !important;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 300px;
+  }
+
+  .carousel .control-prev {
+    left: -30px !important;
+    overflow: visible !important;
+    z-index: 100;
+  }
+  .carousel .control-next {
+    right: -30px !important;
+    overflow: visible !important;
+    z-index: 100;
+  }
+
+  .carousel.carousel-slider {
+    overflow: visible !important;
+  }
+}
+
+.Tabs {
+  background-image: url("../Assets/RequirementsBg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.bgClip {
+  clip-path: polygon(0% 0%, 94% 0, 100% 50%, 94% 100%, 0% 100%);
+  background: rgb(255, 255, 255);
+
+  color: #020540;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+.tabsContent {
+}

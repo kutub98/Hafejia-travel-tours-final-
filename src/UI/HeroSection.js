@@ -14,7 +14,7 @@ const HeroSection = () => {
       showStatus={false}
       showThumbs={false}
       swipeable={false}
-      interval={10000} // 5 seconds
+      interval={15000} // 5 seconds
       className="container mx-auto px-5"
     >
       <div className="">

@@ -16,13 +16,17 @@ import policeClearnce from "../Assets/policeClearnce.jpg";
 import medicalVisa from "../Assets/medicalVisa.jpg";
 import Package from "../Assets/Package.jpg";
 
-import Image from "next/image";
+import Airticket from "./AirticketRequirement";
+import Hazh from "./HazhRequirement";
+import Umrah from "./UmrahRequirement";
+import Passport from "./PassportRequiremts";
 
 const OurService = () => {
   return (
     <div className="container max-w-7xl mx-auto my">
-      <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8">
-        <Card className="my-6 ">
+      {/* <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8"> */}
+      <div>
+        {/* <Card className="my-6 ">
           <CardHeader color="blue-gray" className="relative h-56">
             <Image
               src={visaProcess}
@@ -146,7 +150,12 @@ const OurService = () => {
               <Button className="w-full btn">Read More</Button>
             </Link>
           </CardFooter>
-        </Card>
+        </Card> */}
+
+        <Airticket />
+        <Hazh />
+        <Umrah />
+        <Passport />
       </div>
     </div>
   );
