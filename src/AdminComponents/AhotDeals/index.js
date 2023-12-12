@@ -67,8 +67,7 @@ const ARecentHotDealsOffer = () => {
     console.log(formData);
   };
   return (
-  
-    <div className="mx-auto w-full bg-purple-700 sm:p-8">
+    <div className="mx-auto w-full bg-gray-50 sm:p-8">
       <div className="flex flex-col sm:flex-row justify-between">
         <h1 className="py-2 px-6 bg-green-600 text-white rounded mb-4 sm:mb-0">
           Add a HotDealsOffer
@@ -192,7 +191,11 @@ const ARecentHotDealsOffer = () => {
                             value={row?.HotDealsOfferDetails}
                             label="Hot Deals Offer Details"
                             onChange={e =>
-                              handleInputChange(index, 'HotDealsOfferDetails', e)
+                              handleInputChange(
+                                index,
+                                'HotDealsOfferDetails',
+                                e,
+                              )
                             }
                           />
                         </td>

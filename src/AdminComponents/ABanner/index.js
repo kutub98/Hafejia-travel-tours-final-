@@ -66,7 +66,7 @@ const ABanner = () => {
     console.log(formData);
   };
   return (
-    <div className="mx-auto w-full bg-purple-700 sm:p-8">
+    <div className="mx-auto w-full bg-gray-50 sm:p-8">
       <div className="flex flex-col sm:flex-row justify-between">
         <h1 className="py-2 px-6 bg-green-600 text-white rounded mb-4 sm:mb-0">
           Add a Banner
@@ -144,7 +144,7 @@ const ABanner = () => {
                         className="items-center lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 w-full"
                       >
                         <td className="text-center">{row?.serialNumber}</td>
-                        <td className="flex mx-3 items-center bg-red-600">
+                        <td className="flex mx-3 items-center ">
                           {row.img && (
                             <img
                               src={row.img}
@@ -168,7 +168,7 @@ const ABanner = () => {
                             />
                           </label>
                         </td>
-                        <td className="bg-red-300 mx-3">
+                        <td className=" mx-3">
                           <Input
                             value={row?.BannerName}
                             label="BannerName"
@@ -178,7 +178,7 @@ const ABanner = () => {
                             }
                           />
                         </td>
-                        <td className="mx-3 bg-purple-500">
+                        <td className="mx-3 ">
                           <Input
                             type="textarea"
                             value={row?.BannerDetails}

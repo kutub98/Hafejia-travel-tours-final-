@@ -75,7 +75,7 @@ const SidebarWithContentSeparator = () => {
           hideIconText
             ? 'w-full max-w-[18rem]'
             : 'w-full max-w-[6rem] text-center justify-center'
-        } p-4 shadow-xl shadow-blue-gray-900/5  fixed top-0 left-0 bg-blue-gray-300 overflow-y-scroll`}
+        } p-4 shadow-xl shadow-blue-gray-900/5  fixed top-0 left-0 bg-blue-gray-100 overflow-y-scroll`}
         style={{
           maxHeight: 'calc(100vh - 2rem)',
           overflowY: 'scroll',
@@ -103,9 +103,7 @@ const SidebarWithContentSeparator = () => {
             className="cursor-pointer"
             variant="h5"
             color="blue-gray"
-          >
-            Sidebar
-          </Typography>
+          ></Typography>
         </div>
         <List>
           <Accordion
