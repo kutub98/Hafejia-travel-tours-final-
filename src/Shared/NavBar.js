@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import React, { useEffect, useState } from "react";
+'use client';
+import React, { useEffect, useState } from 'react';
 import {
   Navbar,
   Collapse,
@@ -14,35 +14,35 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-} from "@material-tailwind/react";
+} from '@material-tailwind/react';
 import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
-} from "@heroicons/react/24/outline";
-import Image from "next/image";
-import logo from "../Assets/logo.jpg";
+} from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import logo from '../Assets/logo.jpg';
 
 const navListMenuItems = [
   {
-    title: "Hafezia Travel",
-    link: "/aboutus",
+    title: 'Hafezia Travel',
+    link: '/aboutus',
   },
   {
-    title: "Why Hafezia Travel",
-    link: "#",
+    title: 'Why Hafezia Travel',
+    link: '#',
   },
   {
-    title: "Travel Guide",
-    link: "#",
+    title: 'Travel Guide',
+    link: '#',
   },
   {
-    title: "News",
-    link: "#",
+    title: 'News',
+    link: '#',
   },
   {
-    title: "FAQ And Support",
-    link: "#",
+    title: 'FAQ And Support',
+    link: '#',
   },
 ];
 
@@ -78,19 +78,19 @@ function NavListMenu() {
             <ListItem
               className="flex items-center gap-2 customHover py-2 pr-4 text-white focus:bg-[#54BFB5] focus:text-white"
               selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              onClick={() => setIsMobileMenuOpen(cur => !cur)}
             >
               Know More
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
+                  isMenuOpen ? 'rotate-180' : ''
                 }`}
               />
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
+                  isMobileMenuOpen ? 'rotate-180' : ''
                 }`}
               />
             </ListItem>
@@ -109,7 +109,10 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <div>
+    <>
+      
+      <div>
+      
       <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-lg">
         {/* visa process  */}
         <Typography
@@ -194,6 +197,8 @@ function NavList() {
         <NavListMenu />
       </List>
     </div>
+    </>
+    
   );
 }
 
@@ -209,10 +214,10 @@ const NavBar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 

@@ -46,6 +46,7 @@ const bgwave = renderToString(
     preserveAspectRatio="none"
     overflow="auto"
     shapeRendering="auto"
+    className="hidden "
     fill="#020540"
     xmlnsXlink="http://www.w3.org/1999/xlink" // Add this line
   >
@@ -71,7 +72,7 @@ export function Footer() {
     <footer
       className="relative w-full Footer container mx-auto"
       style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(
+        background: ` url("data:image/svg+xml;utf8,${encodeURIComponent(
           bgwave,
         )}")`,
       }}
@@ -79,7 +80,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
           {SITEMAP.map(({ title, links, herfTag, div }, key) => (
-            <div key={key} className="w-full">
+            <div key={key} className="w-full z-10 bg-white px-3">
               <Link href={herfTag[0]}>
                 <Typography
                   variant="small"

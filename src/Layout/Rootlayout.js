@@ -1,8 +1,8 @@
-import { Footer } from "@/Shared/Footer";
-import NavBar from "@/Shared/NavBar";
-import ImageDisplay from "@/UI/Advertise";
+import { Footer } from '@/Shared/Footer';
+import NavBar from '@/Shared/NavBar';
+import ImageDisplay from '@/UI/Advertise';
 
-import { ArrowUpCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ArrowUpCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {
   Button,
   Drawer,
@@ -11,11 +11,11 @@ import {
   Textarea,
   Tooltip,
   Typography,
-} from "@material-tailwind/react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { BsWhatsapp, BsEnvelopeOpen, BsFacebook } from "react-icons/bs";
-import { IoChatboxOutline } from "react-icons/io5";
+} from '@material-tailwind/react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { BsWhatsapp, BsEnvelopeOpen, BsFacebook } from 'react-icons/bs';
+import { IoChatboxOutline } from 'react-icons/io5';
 
 const Rootlayout = ({ children }) => {
   const [openRight, setOpenRight] = useState(false);
@@ -33,15 +33,15 @@ const Rootlayout = ({ children }) => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     // console.log("hello")
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -73,10 +73,10 @@ const Rootlayout = ({ children }) => {
       }, 1000); // Adjust the delay as needed
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
       if (scrollTimeout) {
         clearTimeout(scrollTimeout);
       }
@@ -93,6 +93,11 @@ const Rootlayout = ({ children }) => {
 
       {/* NavBar */}
       <div className=" sticky top-0 w-full z-10">
+        <div className="text-center w-full container mx-auto bg-white">
+          <h1 className="text-center animate-pulse text-3xl font-bold ">
+            On Going Project
+          </h1>
+        </div>
         <NavBar />
       </div>
 
@@ -105,7 +110,7 @@ const Rootlayout = ({ children }) => {
       {/* bottom to to scroll */}
       <div
         className={`fixed left-8 cursor-pointer bottom-16 ${
-          isHidden ? "hidden" : ""
+          isHidden ? 'hidden' : ''
         }`}
         onClick={scrollToTop}
       >
@@ -161,7 +166,7 @@ const Rootlayout = ({ children }) => {
       <div
         onClick={() => HideSocialMedia()}
         className={`block px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded bottom-16 z-auto transition-all duration-300 ${
-          isVisible ? "translate-x-0" : "translate-x-full"
+          isVisible ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <Tooltip content="Hide" onClick={() => setClickToHide(false)}>
