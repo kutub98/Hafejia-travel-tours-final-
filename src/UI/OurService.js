@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client';
 import {
   Card,
   CardHeader,
@@ -7,31 +7,34 @@ import {
   CardFooter,
   Typography,
   Button,
-} from "@material-tailwind/react";
-import Link from "next/link";
-import visaProcess from "../Assets/visa.jpg";
-import passport from "../Assets/passport.jpg";
-import hazhUmrah from "../Assets/hazhUmrah.jpg";
-import policeClearnce from "../Assets/policeClearnce.jpg";
-import medicalVisa from "../Assets/medicalVisa.jpg";
-import Package from "../Assets/Package.jpg";
+} from '@material-tailwind/react';
+import Link from 'next/link';
+import visaProcess from '../Assets/visa.jpg';
+import passport from '../Assets/passport.jpg';
+import hazhUmrah from '../Assets/hazhUmrah.jpg';
+import policeClearnce from '../Assets/policeClearnce.jpg';
+import medicalVisa from '../Assets/medicalVisa.jpg';
+import Package from '../Assets/Package.jpg';
 
-import Airticket from "./AirticketRequirement";
-import Hazh from "./HazhRequirement";
-import Umrah from "./UmrahRequirement";
-import Passport from "./PassportRequiremts";
+import Airticket from './AirticketRequirement';
+import Hazh from './HazhRequirement';
+import Umrah from './UmrahRequirement';
+import Passport from './PassportRequiremts';
+import Image from 'next/image';
 
 const OurService = () => {
   return (
-    <div className="container max-w-7xl mx-auto my">
-      {/* <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8"> */}
-      <div>
-        {/* <Card className="my-6 ">
+    <div className="container mt-10 services max-w-7xl mx-auto ">
+      <h1 className="text-center text-black lg:text-5xl font-bold lg:mt-32  lg:mb-16 animate-pulse text-3xl ">
+        Our Services
+      </h1>
+      <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8">
+        <Card className="my-6 ">
           <CardHeader color="blue-gray" className="relative h-56">
             <Image
               src={visaProcess}
-              width={"w-full"}
-              height={"full"}
+              width={'w-full'}
+              height={'full'}
               alt="card-image"
             />
           </CardHeader>
@@ -46,8 +49,10 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/visaProcess"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/visaProcess'}>
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
         </Card>
@@ -66,8 +71,10 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/passport"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/passport'}>
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
         </Card>
@@ -86,8 +93,10 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/hazhUmrah"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/hazh'}>
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
         </Card>
@@ -106,8 +115,10 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/policeClearenc"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/policeClearenc'} className="bg-[#54bfb5]">
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
         </Card>
@@ -126,8 +137,10 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/visaProcess"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/visaProcess'}>
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
         </Card>
@@ -146,16 +159,13 @@ const OurService = () => {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link href={"/todayPackage"}>
-              <Button className="w-full btn">Read More</Button>
+            <Link href={'/todayPackage'}>
+              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+                More Details
+              </Button>
             </Link>
           </CardFooter>
-        </Card> */}
-
-        <Airticket />
-        <Hazh />
-        <Umrah />
-        <Passport />
+        </Card>
       </div>
     </div>
   );

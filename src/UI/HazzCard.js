@@ -33,7 +33,7 @@ const ServiceCard = () => {
       </CardBody>
       <CardFooter className="pt-0">
         <Link href={"/visaProcess"}>
-          <Button className="w-full btn">Read More</Button>
+          <Button className="w-full btn">More Details</Button>
         </Link>
       </CardFooter>
     </Card>

@@ -61,7 +61,7 @@ const HotDeals = () => {
   ];
 
   return (
-    <div className="container mx-auto max-w-7xl px-8">
+    <div className="container hotDeals mx-auto max-w-7xl px-8">
       <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
         Hot Deals
       </h1>
@@ -116,9 +116,9 @@ const HotDeals = () => {
                         <a href="#" className="inline-block">
                           <Button
                             variant="text"
-                            className="flex items-center gap-2"
+                            className="flex btnThree hover:bg-[#54bfb5] items-center gap-2"
                           >
-                            Learn More
+                            Details More
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"

@@ -19,15 +19,15 @@ const HomePage = () => {
       <HappyClient />
 
       {/* OurService */}
-      {/* <OurService/> */}
+      <OurService/>
 
       {/* HotDeals */}
       <HotDeals />
 
-      {/* HotDeals */}
-      <div>
+      {/* OurService */}
+      {/* <div>
         <CustomTabs />
-      </div>
+      </div> */}
 
       {/* Packge */}
       <Packge />

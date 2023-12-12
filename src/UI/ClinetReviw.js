@@ -1,31 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import image1 from "../Assets/HappyClients/image11.jpeg";
-import image2 from "../Assets/HappyClients/image12.jpeg";
-import image3 from "../Assets/HappyClients/image13.jpeg";
-import image4 from "../Assets/HappyClients/image14.jpeg";
-import image5 from "../Assets/HappyClients/image15.jpeg";
-import image6 from "../Assets/HappyClients/image16.jpeg";
-import image7 from "../Assets/HappyClients/image17.jpeg";
-import image8 from "../Assets/HappyClients/image18.jpeg";
-import image9 from "../Assets/HappyClients/image19.jpeg";
-import image10 from "../Assets/HappyClients/image20.jpeg";
-import image11 from "../Assets/HappyClients/image21.jpeg";
-import image12 from "../Assets/HappyClients/image22.jpeg";
-import image13 from "../Assets/HappyClients/image23.jpeg";
-import image14 from "../Assets/HappyClients/image24.jpeg";
-import image15 from "../Assets/HappyClients/image25.jpeg";
-import image16 from "../Assets/HappyClients/image26.jpeg";
-import image17 from "../Assets/HappyClients/image27.jpeg";
-import { Carousel } from "react-responsive-carousel";
+import Image from 'next/image';
+import image1 from '../Assets/HappyClients/image11.jpeg';
+import image2 from '../Assets/HappyClients/image12.jpeg';
+import image3 from '../Assets/HappyClients/image13.jpeg';
+import image4 from '../Assets/HappyClients/image14.jpeg';
+import image5 from '../Assets/HappyClients/image15.jpeg';
+import image6 from '../Assets/HappyClients/image16.jpeg';
+import image7 from '../Assets/HappyClients/image17.jpeg';
+import image8 from '../Assets/HappyClients/image18.jpeg';
+import image9 from '../Assets/HappyClients/image19.jpeg';
+import image10 from '../Assets/HappyClients/image20.jpeg';
+import image11 from '../Assets/HappyClients/image21.jpeg';
+import image12 from '../Assets/HappyClients/image22.jpeg';
+import image13 from '../Assets/HappyClients/image23.jpeg';
+import image14 from '../Assets/HappyClients/image24.jpeg';
+import image15 from '../Assets/HappyClients/image25.jpeg';
+import image16 from '../Assets/HappyClients/image26.jpeg';
+import image17 from '../Assets/HappyClients/image27.jpeg';
+import { Carousel } from 'react-responsive-carousel';
 import {
   Button,
   Card,
   CardBody,
   CardHeader,
   Typography,
-} from "@material-tailwind/react";
-import { useEffect, useState } from "react";
+} from '@material-tailwind/react';
+import { useEffect, useState } from 'react';
 function StarIcon() {
   return (
     <svg
@@ -53,10 +53,10 @@ const ClientReview = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
   const ClinetImage = [
@@ -114,11 +114,11 @@ const ClientReview = () => {
   ];
 
   return (
-    <div className="container mx-auto max-w-7xl px-8">
-      <h1 className="text-center lg:text-5xl font-bold xl:mt-36 lg:mt-36 animate-pulse text-3xl my-10">
+    <div className="container  clinetReview mx-auto max-w-7xl px-8 my-24">
+      <h1 className="text-center lg:text-5xl font-bold  animate-pulse text-3xl lg:my-10 my-14 text-black">
         What clinet say about us
       </h1>
-      <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+      <section className="py-6 mx-auto px-10 dark:bg-gray-800 dark:text-gray-50">
         <div className="">
           <Carousel
             autoPlay={true}
@@ -131,7 +131,7 @@ const ClientReview = () => {
             className="conatiner mx-auto grid-cols-4"
           >
             {ClinetImage.map((item, index) => (
-              <div key={index} className="">
+              <div key={index} className="mx-auto">
                 <div className="grid lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                   {ClinetImage.slice(
                     index * 1,

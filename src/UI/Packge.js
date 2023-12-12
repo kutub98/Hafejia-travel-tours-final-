@@ -39,7 +39,7 @@ const Packge = () => {
         showThumbs={false}
         interval={15000}
         swipeable={false}
-        className="container"
+        className="container mx-auto"
       >
         {ClinetImage.map((item, index) => (
           <div key={index} className="">
@@ -74,7 +74,7 @@ const Packge = () => {
                   <a href="#" className="inline-block bg-[#54bfb5] rounded">
                     <Button
                       variant="text"
-                      className="flex items-center gap-2 text-white"
+                      className="flex btnThree items-center gap-2 text-white"
                     >
                       Learn More
                       <svg

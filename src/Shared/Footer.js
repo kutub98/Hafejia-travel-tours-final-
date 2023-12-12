@@ -1,46 +1,81 @@
-"use client";
-import OfficeLocation from "@/UI/officeLocation";
-import { Typography } from "@material-tailwind/react";
-import Link from "next/link";
-import { BsWhatsapp } from "react-icons/bs";
-
+'use client';
+import OfficeLocation from '@/UI/officeLocation';
+import { Typography } from '@material-tailwind/react';
+import Link from 'next/link';
+import { BsWhatsapp } from 'react-icons/bs';
+import { renderToString } from 'react-dom/server';
+import Gallery from '@/UI/Gallery';
 const SITEMAP = [
   {
-    title: "Company",
-    links: ["About Us", "Our Office", "Success"],
-    herfTag: ["/aboutus", "https://example.com/careers", "/src/UI/Gallery.js"],
+    title: 'Details',
+    links: ['About Us', 'Our Office', 'Success'],
+    herfTag: ['/aboutus', 'https://example.com/careers', { Gallery }],
   },
   {
-    title: "Help Center",
-    links: ["Facebook", "WhatsApp", "Instagram"],
+    title: 'Help Center',
+    links: ['Facebook', 'WhatsApp', 'Instagram'],
     herfTag: [
-      "https://www.facebook.com/search/top?q=hafezia%20tours%20and%20travels",
-      "https://wa.me/88001867158067",
-      "https://www.instagram.com/",
+      'https://www.facebook.com/search/top?q=hafezia%20tours%20and%20travels',
+      'https://wa.me/88001867158067',
+      'https://www.instagram.com/',
     ],
   },
   {
-    title: "Resources",
-    links: ["Blog", "Newsletter", "Chunoti Blood Bank"],
+    title: 'Resources',
+    links: ['Blog', 'Newsletter', 'Chunoti Blood Bank'],
     herfTag: [
-      "https://example.com/blog",
-      "https://example.com/newsletter",
-      "https://example.com/chunoti-blood-bank",
+      'https://example.com/blog',
+      'https://example.com/newsletter',
+      'https://example.com/chunoti-blood-bank',
     ],
   },
   {
-    title: "Our Office",
-    links: [""],
-    herfTag: ["OFFICE"],
+    title: 'Our Office',
+    links: [''],
+    herfTag: ['OFFICE'],
     div: <OfficeLocation></OfficeLocation>,
   },
 ];
-
 const currentYear = new Date().getFullYear();
+const bgwave = renderToString(
+  <svg
+    width="100%"
+    height="700px"
+    viewBox="0 0 1000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    overflow="auto"
+    shapeRendering="auto"
+    fill="#020540"
+    xmlnsXlink="http://www.w3.org/1999/xlink" // Add this line
+  >
+    <defs>
+      <path
+        id="wavepath"
+        d="M 0 2000 0 500 Q 150 422 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z"
+      />
+      <path id="motionpath" d="M -600 0 0 0" />
+    </defs>
+    <g>
+      <use className=" -z-10" xlinkHref="#wavepath" y="150" fill="#020540">
+        <animateMotion dur="5s" repeatCount="indefinite">
+          <mpath xlinkHref="#motionpath" />
+        </animateMotion>
+      </use>
+    </g>
+  </svg>,
+);
 
 export function Footer() {
   return (
-    <footer className="relative w-full Footer container mx-auto">
+    <footer
+      className="relative w-full Footer container mx-auto"
+      style={{
+        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(
+          bgwave,
+        )}")`,
+      }}
+    >
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
           {SITEMAP.map(({ title, links, herfTag, div }, key) => (
@@ -48,7 +83,7 @@ export function Footer() {
               <Link href={herfTag[0]}>
                 <Typography
                   variant="small"
-                  color="white"
+                  color="#020540"
                   className="mb-4 font-bold uppercase opacity-50"
                 >
                   {title}
@@ -59,7 +94,7 @@ export function Footer() {
                   <Typography
                     key={index}
                     as="li"
-                    color="white"
+                    color="#020540"
                     className="font-normal"
                   >
                     <a
@@ -81,8 +116,8 @@ export function Footer() {
             variant="small"
             className="mb-4 text-center font-normal text-white md:mb-0"
           >
-            &copy; {currentYear}{" "}
-            <a href="https://jmkutub1.web.app/">Hafezia Travel Tours </a> &{" "}
+            &copy; {currentYear}{' '}
+            <a href="https://jmkutub1.web.app/">Hafezia Travel Tours </a> &{' '}
             <a href="https://jmkutub1.web.app/">Kutub Uddin </a>. All Rights
             Reserved.
           </Typography>

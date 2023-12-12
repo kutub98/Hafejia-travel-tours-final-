@@ -160,7 +160,7 @@ const Rootlayout = ({ children }) => {
       {/* social scroll handle  */}
       <div
         onClick={() => HideSocialMedia()}
-        className={`block  px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded bottom-16 z-auto transition-all duration-300 ${
+        className={`block px-2 py-4 items-center justify-center text-center fixed right-0 bg-white rounded bottom-16 z-auto transition-all duration-300 ${
           isVisible ? "translate-x-0" : "translate-x-full"
         }`}
       >

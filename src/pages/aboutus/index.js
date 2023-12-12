@@ -14,7 +14,8 @@ const AboutUs = () => {
   return (
     <div className=" container bg-[#54bfb5] mx-auto rounded">
       <title>ABOUT US Hafejia | Travel Tours </title>
-      <Card className=" max-w-5xl mx-auto lg:flex-row flex-col items-center p-8 m-4 bg-[#54bfb5] rounded">
+        <div className=" max-w-5xl mx-auto p-2">
+        <Card className="lg:flex-row flex-col items-center p-8 m-4 bg-[#54bfb5] rounded">
         <CardHeader className=" w-72 h-72 lg:w-96 m-6 lg:h-96 removeBackgournd shrink-0 rounded-r-none justify-center items-center">
           <Image
             src={ceo}
@@ -67,6 +68,7 @@ const AboutUs = () => {
           </a>
         </CardBody>
       </Card>
+        </div>
     </div>
   );
 };

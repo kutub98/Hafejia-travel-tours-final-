@@ -29,11 +29,11 @@ function CustomTabs() {
         <div className=" mx-auto flex xl:justify-between justify-between md:justify-center ">
           <h1 className=" lg:text-left sm:text-center  text-2xl sm:text-4xl font-semibold "></h1>
 
-          <ul className=" lg:w-[480px]  w-auto overflow-hidden flex justify-start  sm:justify-start  my-2 bg-[#f1f3f3] shadow-md  p-2 rounded">
+          <ul className=" lg:w-[480px]  w-full overflow-hidden flex justify-start  sm:justify-start  my-2 bg-[#f1f3f3] shadow-md  p-2 rounded">
             {tabs.map((tab, index) => (
               <li
                 key={index}
-                className={`mx-auto cursor-pointer  sm:px-4 py-2 rounded text-center sm:text-right ${
+                className={`mx-auto px-2 cursor-pointer  sm:px-4 py-2 rounded text-center sm:text-right ${
                   activeTab === index
                     ? "text-white bg-[#020540] text-lg"
                     : "text-black   text-lg"
