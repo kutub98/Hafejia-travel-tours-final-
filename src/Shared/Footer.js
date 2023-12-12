@@ -31,6 +31,7 @@ const SITEMAP = [
   },
   {
     title: 'Our Office',
+    className: 'bg-white z-50',
     links: [''],
     herfTag: ['OFFICE'],
     div: <OfficeLocation></OfficeLocation>,
@@ -46,7 +47,7 @@ const bgwave = renderToString(
     preserveAspectRatio="none"
     overflow="auto"
     shapeRendering="auto"
-    className="hidden "
+    className="hidden  "
     fill="#020540"
     xmlnsXlink="http://www.w3.org/1999/xlink" // Add this line
   >
@@ -58,7 +59,7 @@ const bgwave = renderToString(
       <path id="motionpath" d="M -600 0 0 0" />
     </defs>
     <g>
-      <use className=" -z-10" xlinkHref="#wavepath" y="150" fill="#020540">
+      <use className=" " xlinkHref="#wavepath" y="300" fill="#020540">
         <animateMotion dur="5s" repeatCount="indefinite">
           <mpath xlinkHref="#motionpath" />
         </animateMotion>
@@ -70,17 +71,17 @@ const bgwave = renderToString(
 export function Footer() {
   return (
     <footer
-      className="relative w-full Footer container mx-auto"
+      className="relative w-full Footer container mx-auto bg-white"
       style={{
         background: ` url("data:image/svg+xml;utf8,${encodeURIComponent(
           bgwave,
         )}")`,
       }}
     >
-      <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
+      <div className="mx-auto w-full max-w-7xl px-8 ">
+        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2 ">
           {SITEMAP.map(({ title, links, herfTag, div }, key) => (
-            <div key={key} className="w-full z-10 bg-white px-3">
+            <div key={key} className="w-full z-10  px-3">
               <Link href={herfTag[0]}>
                 <Typography
                   variant="small"
