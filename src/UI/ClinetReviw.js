@@ -114,7 +114,7 @@ const ClientReview = () => {
   ];
 
   return (
-    <div className="container  clinetReview mx-auto max-w-7xl px-8 my-24">
+    <div className="container  clinetReview mx-auto max-w-5xl px-8 my-24">
       <h1 className="text-center lg:text-5xl font-bold  animate-pulse text-3xl lg:my-10 my-14 text-black">
         What clinet say about us
       </h1>
@@ -132,32 +132,32 @@ const ClientReview = () => {
           >
             {ClinetImage.map((item, index) => (
               <div key={index} className="mx-auto">
-                <div className="grid lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-1 xl:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 gap-4  justify-center mx-auto">
                   {ClinetImage.slice(
                     index * 1,
-                    index * 1 + (windowWidth < 740 ? 1 : 2),
+                    index * 1 + (windowWidth < 740 ? 1 : 1),
                   ).map((image, i) => (
                     <div className="" key={i}>
-                      <Card className="w-full lg:flex-row flex-col items-center px-5">
+                      <Card className="w-2/3 mx-auto py-6 bg-gray-50 items-center px-5">
                         <CardHeader
                           shadow={false}
                           floated={false}
-                          className="m-0 w-40 h-40 shrink-0 rounded-r-none"
+                          className="m-0 w-40 h-40 shrink-0 bg-transparent rounded-r-none"
                         >
                           <Image
                             src={image.imgSrc}
                             alt="card-image"
-                            className="h-full w-full rounded-full object-cover border-1"
+                            className="h-full w-full rounded-full object-cover border-1 bg-none"
                           />
                         </CardHeader>
                         <CardBody className="relative">
-                          <Typography
+                          {/* <Typography
                             variant="h6"
                             color="gray"
                             className="mb-4 uppercase"
                           >
                             Happy Client
-                          </Typography>
+                          </Typography> */}
                           <Typography
                             variant="h6"
                             color="blue-gray"
@@ -173,12 +173,14 @@ const ClientReview = () => {
                             Like so many organizations these days, Autodesk is a
                             company in transition.
                           </Typography>
-                          <div className=" absolute flex gap-0  lg:right-6  bottom-4">
+                          {/* <div className="mx-auto "> */}
+                          <div className="flex gap-0 justify-center">
                             <StarIcon />
                             <StarIcon />
                             <StarIcon />
                             <StarIcon />
                             <StarIcon />
+                            {/* </div> */}
                           </div>
                         </CardBody>
                       </Card>
