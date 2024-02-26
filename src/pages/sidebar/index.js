@@ -36,6 +36,8 @@ const SidebarWithContentSeparator = () => {
   const [open, setOpen] = React.useState(0);
   const [selectedContent, setSelectedContent] = useState('Home');
 
+  
+
   const renderContent = () => {
     switch (selectedContent) {
       case 'Home':
@@ -83,32 +85,36 @@ const SidebarWithContentSeparator = () => {
   return (
     <div className="flex max-w-7xl container mx-auto">
       <Card
-        className={`h-[calc(100vh-2rem)]  ${
+        className={`h-[calc(100vh)]  ${
           hideIconText
             ? 'w-full max-w-[18rem]'
             : 'w-full max-w-[6rem] text-center justify-center'
         } p-4 shadow-xl shadow-blue-gray-900/5  fixed top-0 left-0 bg-blue-gray-900 overflow-y-scroll`}
         style={{
-          maxHeight: 'calc(100vh - 2rem)',
+          maxHeight: 'calc(100vh)',
           overflowY: 'scroll',
           scrollbarWidth: 'thin',
           scrollbarColor: 'transparent transparent',
         }}
       >
-        <div className=" absolute right-2 z-50 top-0 my-4 bg-white p-4 rounded-full text-center ">
+        <div className=" flex justify-end sticky   right-2 z-50 top-0 rounded-full  ">
           {hideIconText ? (
-            <IoIosArrowBack
-              className="h-5 w-5"
+            <div
+              className=" rounded-full transition-transform  bg-white cursor-pointer flex justify-center items-center"
               onClick={() => HandleHideIcon(hideIconText)}
-            />
+            >
+              <IoIosArrowBack className="h-10 w-10 p-2" />
+            </div>
           ) : (
-            <FaBars
-              className="h-5 w-5"
+            <div
+              className=" flex my-auto rounded-full text-center justify-center  transition-all bg-white cursor-pointer items-center "
               onClick={() => HandleHideText(hideIconText)}
-            />
+            >
+              <FaBars className="h-10 w-10 p-2" />
+            </div>
           )}
         </div>
-        <div className="mb-2 p-4 my-5">
+        <div className="mb-2 p-4 ">
           <Typography
             href="/"
             as="a"
@@ -211,11 +217,11 @@ const SidebarWithContentSeparator = () => {
               ) : (
                 <ListItem
                   className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
-                    selectedContent === 'banner'
+                    selectedContent === 'BannerList'
                       ? 'bg-blue-800 text-white'
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
-                  onClick={() => selectContent('banner')}
+                  onClick={() => selectContent('BannerList')}
                 >
                   <ListItemPrefix>
                     <PiFlagBannerFill className="h-5 w-5 -ml-1" />
@@ -247,7 +253,7 @@ const SidebarWithContentSeparator = () => {
                       ? 'bg-blue-800 text-white'
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
-                  onClick={() => selectContent('banner')}
+                  onClick={() => selectContent('services')}
                 >
                   <ListItemPrefix>
                     <PiFlagBannerFill className="h-5 w-5 -ml-1" />
@@ -274,11 +280,11 @@ const SidebarWithContentSeparator = () => {
               ) : (
                 <ListItem
                   className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
-                    selectedContent === 'services'
+                    selectedContent === 'ServiceList'
                       ? 'bg-blue-800 text-white'
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
-                  onClick={() => selectContent('banner')}
+                  onClick={() => selectContent('ServiceList')}
                 >
                   <ListItemPrefix>
                     <PiFlagBannerFill className="h-5 w-5 -ml-1" />
@@ -369,11 +375,11 @@ const SidebarWithContentSeparator = () => {
               ) : (
                 <ListItem
                   className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
-                    selectedContent === 'recentPackage'
+                    selectedContent === 'PackageList'
                       ? 'bg-blue-800 text-white'
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
-                  onClick={() => selectContent('recentPackage')}
+                  onClick={() => selectContent('PackageList')}
                 >
                   <ListItemPrefix>
                     <TbPackages className="h-5 w-5 -ml-1" />

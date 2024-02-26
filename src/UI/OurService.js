@@ -16,10 +16,6 @@ import policeClearnce from '../Assets/policeClearnce.jpg';
 import medicalVisa from '../Assets/medicalVisa.jpg';
 import Package from '../Assets/Package.jpg';
 
-import Airticket from './AirticketRequirement';
-import Hazh from './HazhRequirement';
-import Umrah from './UmrahRequirement';
-import Passport from './PassportRequiremts';
 import Image from 'next/image';
 
 const OurService = () => {
@@ -100,7 +96,7 @@ const OurService = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="my-6 ">
+        {/* <Card className="my-6 ">
           <CardHeader color="blue-gray" className="relative h-56">
             <Image src={policeClearnce} alt="card-image" />
           </CardHeader>
@@ -165,7 +161,7 @@ const OurService = () => {
               </Button>
             </Link>
           </CardFooter>
-        </Card>
+        </Card> */}
       </div>
     </div>
   );

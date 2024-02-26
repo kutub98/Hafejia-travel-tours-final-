@@ -48,9 +48,15 @@ const BannerList = () => {
             </Typography>
           </div>
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
-            <Button className="flex items-center gap-3" size="sm">
-              <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add Banner
-            </Button>
+            <Typography
+              as="a"
+              href="sidebar/AdminComponents/ABanner"
+              color="white"
+            >
+              <Button className="flex items-center gap-3" size="sm">
+                <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add Banner
+              </Button>
+            </Typography>
           </div>
         </div>
       </CardHeader>
@@ -97,7 +103,6 @@ const BannerList = () => {
                       >
                         {bannerTitle}
                       </Typography>
-                      
                     </div>
                   </td>
                   <td className={classes}>
@@ -107,19 +112,19 @@ const BannerList = () => {
                         color="blue-gray"
                         className="font-normal"
                       >
-                        {<Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal opacity-70"
-                      >
-                        {bannerDesc}
-                      </Typography>}
+                        {
+                          <Typography
+                            variant="small"
+                            color="blue-gray"
+                            className="font-normal opacity-70"
+                          >
+                            {bannerDesc}
+                          </Typography>
+                        }
                       </Typography>
-                      
                     </div>
                   </td>
-                  
-                  
+
                   <td className={classes}>
                     <Tooltip content="Edit User">
                       <IconButton variant="text">

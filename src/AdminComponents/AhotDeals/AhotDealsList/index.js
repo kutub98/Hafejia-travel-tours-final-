@@ -48,9 +48,12 @@ const HotDealsList = () => {
             </Typography>
           </div>
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
-            <Button className="flex items-center gap-3" size="sm">
-              <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add Hot Deals
-            </Button>
+            <Typography as="a" href="/ahotDeals" color="white">
+              <Button className="flex items-center gap-3" size="sm">
+                <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add Hot
+                Deals
+              </Button>
+            </Typography>
           </div>
         </div>
       </CardHeader>
