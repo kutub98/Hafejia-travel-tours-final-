@@ -106,19 +106,19 @@ const Packge = () => {
     //     ))}
     //   </Carousel>
     // </div>
-    <div className=" max-w-5xl mx-auto container my-32">
-      <h1 className="text-center  lg:text-4xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10  rounded-xl lg:w-2/5 justify-center mx-auto border-b-8 border-[#499ebf]">
+    <div className=" max-w-7xl  p-2 rounded mx-auto container bg-white my-32">
+      <h1 className="text-center  lg:text-4xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10  rounded-xl lg:w-2/5 justify-center mx-auto ">
         Recent Package
       </h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-auto">
         {ClinetImage.map((img, index) => (
-          <div className="" key={index}>
-            <Card className="w-full max-w-[26rem] shadow-lg">
+          <div className=" mx-auto" key={index}>
+            <Card className="w-full lg:max-w-[26rem] max-w-[20rem] shadow-lg hover:bg-gray-100">
               <CardHeader floated={false} color="blue-gray">
                 <Image src={img.imgSrc} />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
               </CardHeader>
-              <div className="hover:bg-[#499ebf] hover:text-white hover:duration-500">
+              <div className=" hover:text-white hover:duration-500">
                 <CardBody>
                   <div className="mb-3 flex items-center justify-between">
                     <Typography
@@ -154,9 +154,11 @@ const Packge = () => {
                   </Typography>
                 </CardBody>
                 <CardFooter className="pt-3">
-                  <Button size="lg" fullWidth={true}>
-                    Reserve
-                  </Button>
+                  <Typography as="a" href="/package">
+                    <Button size="lg" fullWidth={true}>
+                      Reserve
+                    </Button>
+                  </Typography>
                 </CardFooter>
               </div>
             </Card>

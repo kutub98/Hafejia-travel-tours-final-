@@ -20,7 +20,7 @@ import Image from 'next/image';
 
 const OurService = () => {
   return (
-    <div className="container mt-10 services max-w-7xl mx-auto ">
+    <div className="container mt-10 services max-w-7xl mx-auto bg-white p-2 rounded">
       <h1 className="text-center text-black lg:text-5xl font-bold lg:mt-32  lg:mb-16 animate-pulse text-3xl ">
         Our Services
       </h1>

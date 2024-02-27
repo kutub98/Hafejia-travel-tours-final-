@@ -1,16 +1,16 @@
 import Rootlayout from '@/Layout/Rootlayout';
 import Image from 'next/image';
-import visaImage from '../../Assets/BG/visa.jpg';
+import umrah from '../../Assets/BG/HAZHUMRAH.jpg';
 import { Typography } from '@material-tailwind/react';
 import { BsCheck } from 'react-icons/bs';
-const VisaProcess = () => {
+const Umrah = () => {
   return (
     <div className="container mx-auto max-w-7xl px-8">
-      <title>Visa Processing || Hafejia Travel Tours</title>
+      <title>Umrah Visa Processing || Hafejia Travel Tours</title>
       <div className="w-full h-auto">
         <Image
-          src={visaImage}
-          alt="visaImage"
+          src={umrah}
+          alt="umrah"
           layout="responsive"
           width={1200}
           height={500}
@@ -19,7 +19,7 @@ const VisaProcess = () => {
       {/* <div className="flex h-96 justify-center items-center"> */}
       <div className="">
         <h1 className="text-center justify-center items-center">
-          Visit Visa | Working Visa
+        Umrah Visa Processing || Hafejia Travel Tours
         </h1>{' '}
         <br></br>
         {/* <h1 className="text-center my-auto animate-pulse textColor text-white lg:text-7xl ltext-2xl">
@@ -77,8 +77,8 @@ const VisaProcess = () => {
   );
 };
 
-export default VisaProcess;
+export default Umrah;
 
-VisaProcess.getLayout = function getLayout(page) {
+Umrah.getLayout = function getLayout(page) {
   return <Rootlayout>{page}</Rootlayout>;
 };

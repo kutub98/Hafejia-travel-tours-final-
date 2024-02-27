@@ -93,7 +93,7 @@ const HappyClient = () => {
 
   return (
     //
-    <div className="container mx-auto max-w-7xl px-8">
+    <div className="container mx-auto max-w-7xl px-8 ">
       <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
         Happy Clients
       </h1>
@@ -112,10 +112,10 @@ const HappyClient = () => {
             <div className="grid lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
               {ClinetImage.slice(
                 index * 1,
-                index * 1 + (windowWidth < 740 ? 1 : 2),
+                index * 1 + (windowWidth < 1040 ? 1 : 2),
               ).map((image, i) => (
-                <div key={i} className="h-72">
-                  <Card className="h-72">
+                <div key={i} className="h-96">
+                  <Card className="h-96">
                     <CardHeader
                       shadow={false}
                       floated={false}
@@ -124,7 +124,9 @@ const HappyClient = () => {
                       <Image
                         src={image.imgSrc}
                         alt="card-image"
-                        className="h-full  object-fit"
+                        layout="responsive"
+                        width={1200}
+                        height={500}
                       />
                     </CardHeader>
                   </Card>

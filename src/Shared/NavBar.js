@@ -25,10 +25,6 @@ import logo from '../Assets/logo.jpg';
 
 const navListMenuItems = [
   {
-    title: 'Hafezia Travel',
-    link: '/aboutus',
-  },
-  {
     title: 'Why Hafezia Travel',
     link: '#',
   },
@@ -51,11 +47,11 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const renderItems = navListMenuItems.map(({ icon, title, link }, key) => (
     <a href={link} key={key}>
-      <div className="flex items-center gap-3 rounded-lg">
+      <div className="flex items-center gap-3 ">
         <div>
           <Typography
             color="white"
-            className="flex items-center ml-2 customHover px-2 py-2 rounded "
+            className="flex items-center ml-2 customHover px-3 py-2  "
           >
             {title}
           </Typography>
@@ -96,8 +92,8 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-1 gap-y-2  submenu">{renderItems}</ul>
+        <MenuList className="hidden max-w-screen-xl bg-[#001719] lg:block">
+          <ul className="grid grid-cols-1 gap-y-2 ">{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -110,58 +106,45 @@ function NavListMenu() {
 function NavList() {
   return (
     <>
-      
       <div>
-      
-      <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-lg">
-        {/* visa process  */}
-        <Typography
-          as="a"
-          href="/visaProcess"
-          color="white"
-          className="customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 customHover focus:bg-[#54BFB5] focus:text-white!">
-            Visa Processing
-          </ListItem>
-        </Typography>
+        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-lg">
+          {/* visa process  */}
+          <Typography
+            as="a"
+            href="/visaProcess"
+            color="white"
+            className="customHover focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex items-center gap-2 py-2 pr-4 customHover focus:bg-[#54BFB5] focus:text-white!">
+              Visa Processing
+            </ListItem>
+          </Typography>
 
-        {/* HAZE UMRA  */}
-        <Typography
-          as="a"
-          href="/hazh"
-          color="white"
-          className="customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
-            Hazz
-          </ListItem>
-        </Typography>
+          {/* HAZE UMRA  */}
+          <Typography
+            as="a"
+            href="/umrahAndHaze"
+            color="white"
+            className="customHover focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
+              Hazh & Umrah
+            </ListItem>
+          </Typography>
 
-        <Typography
-          as="a"
-          href="/umrah"
-          color="white"
-          className="customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
-            Umrah
-          </ListItem>
-        </Typography>
-
-        {/* Pasport  */}
-        <Typography
-          as="a"
-          href="/passport"
-          color="white"
-          className="customHover lg:hidden focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-            Pasport
-          </ListItem>
-        </Typography>
-        {/* Package  */}
-        {/* <Typography
+          {/* Pasport  */}
+          <Typography
+            as="a"
+            href="/passport"
+            color="white"
+            className="customHover lg:hidden focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+              Pasport
+            </ListItem>
+          </Typography>
+          {/* Package  */}
+          {/* <Typography
           as="a"
           href="/todayPackage"
           color="white"
@@ -171,34 +154,33 @@ function NavList() {
             Package
           </ListItem>
         </Typography> */}
-        {/* AirTicke  */}
-        <Typography
-          as="a"
-          href="/airTicket"
-          color="white"
-          className="customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-            Air Ticket
-          </ListItem>
-        </Typography>
+          {/* AirTicke  */}
+          <Typography
+            as="a"
+            href="/package"
+            color="white"
+            className="customHover focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+              Packages
+            </ListItem>
+          </Typography>
+          {/* About us  */}
+          <Typography
+            as="a"
+            href="/aboutus"
+            color="white"
+            className="customHover focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+              About us
+            </ListItem>
+          </Typography>
 
-        {/* police clearence  */}
-        <Typography
-          as="a"
-          href="/policeClearenc"
-          color="white"
-          className="font-medium lg:hidden  customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 text-white">
-            Police clearence
-          </ListItem>
-        </Typography>
-        <NavListMenu />
-      </List>
-    </div>
+          <NavListMenu />
+        </List>
+      </div>
     </>
-    
   );
 }
 

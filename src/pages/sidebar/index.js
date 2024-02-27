@@ -32,11 +32,11 @@ import { LuSettings } from 'react-icons/lu';
 import ServiceList from '@/AdminComponents/AService/ServiceList';
 import HotDealsList from '@/AdminComponents/AhotDeals/AhotDealsList';
 import PackageList from '@/AdminComponents/ARecentPackage/PackageList';
+import GalleryList from '@/AdminComponents/AGallery/GalleryList';
+import ClientImageList from '@/AdminComponents/HappyClients/ClientImgList';
 const SidebarWithContentSeparator = () => {
   const [open, setOpen] = React.useState(0);
   const [selectedContent, setSelectedContent] = useState('Home');
-
-  
 
   const renderContent = () => {
     switch (selectedContent) {
@@ -46,6 +46,8 @@ const SidebarWithContentSeparator = () => {
         return <ABanner className="transition-all duration-500" />;
       case 'clientImg':
         return <ClineImage className="transition-all duration-500" />;
+      case 'clientImgList':
+        return <ClientImageList className="transition-all duration-500" />;
       case 'recentPackage':
         return <ARecentPackage className="transition-all duration-500" />;
       case 'PackageList':
@@ -62,6 +64,8 @@ const SidebarWithContentSeparator = () => {
         return <ServiceList className="transition-all duration-500" />;
       case 'gallery':
         return <AGallery className="transition-all duration-500" />;
+      case 'galleryList':
+        return <GalleryList className="transition-all duration-500" />;
       default:
         return null;
     }
@@ -307,7 +311,7 @@ const SidebarWithContentSeparator = () => {
                   <ListItemPrefix>
                     <FaChalkboardUser className="h-5 w-5" />
                   </ListItemPrefix>
-                  Happy Clients Pic
+                  Clients Image
                 </ListItem>
               ) : (
                 <ListItem
@@ -317,6 +321,37 @@ const SidebarWithContentSeparator = () => {
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
                   onClick={() => selectContent('clientImg')}
+                >
+                  <ListItemPrefix>
+                    <FaChalkboardUser className="h-5 w-5 -ml-1" />
+                  </ListItemPrefix>
+                </ListItem>
+              )}
+            </Tooltip>
+            {/* Happy Clients list */}
+            <Tooltip content=" Client Image list" placement="right">
+              {hideIconText ? (
+                <ListItem
+                  className={`cursor-pointer  rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'clientImgList'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('clientImgList')}
+                >
+                  <ListItemPrefix>
+                    <FaChalkboardUser className="h-5 w-5" />
+                  </ListItemPrefix>
+                  Client Image list
+                </ListItem>
+              ) : (
+                <ListItem
+                  className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'clientImgList'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('clientImgList')}
                 >
                   <ListItemPrefix>
                     <FaChalkboardUser className="h-5 w-5 -ml-1" />
@@ -475,6 +510,37 @@ const SidebarWithContentSeparator = () => {
                       : 'bg-gray-50 text-blue-gray-800'
                   }  `}
                   onClick={() => selectContent('gallery')}
+                >
+                  <ListItemPrefix>
+                    <TfiGallery className="h-5 w-5 -ml-1" />
+                  </ListItemPrefix>
+                </ListItem>
+              )}
+            </Tooltip>
+            {/* galleryList  */}
+            <Tooltip content="galleryList" placement="left">
+              {hideIconText ? (
+                <ListItem
+                  className={`cursor-pointer flex items-center px-4 py-3 rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'galleryList'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('galleryList')}
+                >
+                  <ListItemPrefix>
+                    <TfiGallery className="h-5 w-5" />
+                  </ListItemPrefix>
+                  Gallery List
+                </ListItem>
+              ) : (
+                <ListItem
+                  className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'galleryList'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('galleryList')}
                 >
                   <ListItemPrefix>
                     <TfiGallery className="h-5 w-5 -ml-1" />

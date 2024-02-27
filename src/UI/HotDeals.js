@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import mobileBanking from "../Assets/mobileBanking.jpg";
-import airTicke from "../Assets/airTicket.jpg";
-import medicalVisa from "../Assets/dis-Medi.jpg";
-import hotelBooking from "../Assets/hotelBooking.jpg";
-import Image from "next/image";
+'use client';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import mobileBanking from '../Assets/mobileBanking.jpg';
+import airTicke from '../Assets/airTicket.jpg';
+import medicalVisa from '../Assets/dis-Medi.jpg';
+import hotelBooking from '../Assets/hotelBooking.jpg';
+import Image from 'next/image';
 import {
   Button,
   Card,
   CardBody,
   CardHeader,
   Typography,
-} from "@material-tailwind/react";
-import { useEffect, useState } from "react";
+} from '@material-tailwind/react';
+import { useEffect, useState } from 'react';
 
 const HotDeals = () => {
   const [windowWidth, setWindowWidth] = useState(null);
@@ -26,37 +26,37 @@ const HotDeals = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const items = [
     {
       imgSrc: mobileBanking,
-      alt: "Image 1",
-      title: "Mobile Banking",
-      discount: "Discount on",
+      alt: 'Image 1',
+      title: 'Mobile Banking',
+      discount: 'Discount on',
     },
     {
       imgSrc: airTicke,
-      alt: "Image 2",
-      title: "Air Ticket",
-      discount: "Discount on",
+      alt: 'Image 2',
+      title: 'Air Ticket',
+      discount: 'Discount on',
     },
     {
       imgSrc: medicalVisa,
-      alt: "Image 3",
-      title: "Medical Visa",
-      discount: "Discount on",
+      alt: 'Image 3',
+      title: 'Medical Visa',
+      discount: 'Discount on',
     },
     {
       imgSrc: hotelBooking,
-      alt: "Image 4",
-      title: "Hotel Booking",
-      discount: "Discount on",
+      alt: 'Image 4',
+      title: 'Hotel Booking',
+      discount: 'Discount on',
     },
   ];
 
@@ -79,7 +79,7 @@ const HotDeals = () => {
           <div key={index} className="">
             <div className="grid lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
               {items
-                .slice(index * 1, index * 1 + (windowWidth < 740 ? 1 : 2))
+                .slice(index * 1, index * 1 + (windowWidth < 1040 ? 1 : 2))
                 .map((image, i) => (
                   <div key={i} className="">
                     <Card className=" lg:flex-row flex-col">
@@ -91,6 +91,7 @@ const HotDeals = () => {
                         <Image
                           src={image.imgSrc}
                           alt="card-image"
+                          layout="responsive"
                           className="h-full w-full object-cover"
                         />
                       </CardHeader>

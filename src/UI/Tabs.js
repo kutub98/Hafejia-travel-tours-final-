@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import OurService from "./OurService";
-import Hazh from "./HazhRequirement";
-import Umrah from "./UmrahRequirement";
-import Airticket from "./AirticketRequirement";
-import Passport from "./PassportRequiremts";
 function CustomTabs() {
   const tabs = [
     // { label: "All", content: <OurService/> },
-    { label: "Hazh", content: <Hazh></Hazh> },
-    { label: "Umrah", content: <Umrah></Umrah> },
-    { label: "Ticket", content: <Airticket></Airticket> },
-    { label: "Passport", content: <Passport></Passport> },
+
+    
   ];
 
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabClick = (index) => {
+  const handleTabClick = index => {
     setActiveTab(index);
   };
 
@@ -35,8 +28,8 @@ function CustomTabs() {
                 key={index}
                 className={`mx-auto px-2 cursor-pointer  sm:px-4 py-2 rounded text-center sm:text-right ${
                   activeTab === index
-                    ? "text-white bg-[#020540] text-lg"
-                    : "text-black   text-lg"
+                    ? 'text-white bg-[#020540] text-lg'
+                    : 'text-black   text-lg'
                 }`}
                 onClick={() => handleTabClick(index)}
               >
@@ -51,7 +44,7 @@ function CustomTabs() {
             <div
               key={index}
               className={`${
-                activeTab === index ? "block tabsContent" : "hidden"
+                activeTab === index ? 'block tabsContent' : 'hidden'
               } max-w-7xl animate-fade-out mx-auto`}
             >
               {tab.content}

@@ -151,13 +151,7 @@ const ClientReview = () => {
                           />
                         </CardHeader>
                         <CardBody className="relative">
-                          {/* <Typography
-                            variant="h6"
-                            color="gray"
-                            className="mb-4 uppercase"
-                          >
-                            Happy Client
-                          </Typography> */}
+                          
                           <Typography
                             variant="h6"
                             color="blue-gray"

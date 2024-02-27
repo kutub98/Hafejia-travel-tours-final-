@@ -54,8 +54,8 @@ const Gallery = () => {
     setSeeMore(false);
   };
   return (
-    <section className="py-6 Gallery dark:bg-gray-800 dark:text-gray-50 px-8">
-      <h1 className="text-center lg:text-white md:text-white sm:text-black  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
+    <section className="py-6  dark:bg-gray-800 dark:text-gray-50 px-8">
+      <h1 className="text-center  sm:text-black  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
         Gallery
       </h1>
       <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
