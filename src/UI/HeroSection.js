@@ -26,16 +26,16 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center bg-white lg:py-16">
         <div className=" px-12 text-left lg:col-span-3 md:col-span-3 bg-white">
           <h1 className="text-3xl lg:text-7xl font-bold text-blue-gray-800 my-4">
-            Travel makes a <br></br> man Refresh
+            ভ্রমন মানুষ কে <br></br> মন ফ্রেশ রাখে
           </h1>
           <h1 className="text-xl font-normal font-sans text-black">
-            Travel with Hafezia Travel Tours
+            হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস সাথে ভ্রমন করুন
           </h1>
 
-          <div className="flex justify-between w-60 my-5">
+          <div className="flex justify-between w-64 my-5">
             <Typography as="a" href="package">
               <Button className=" btnThree bg-gray-100 hover:bg-[#54bfb5] hover:rounded">
-                Our Offers
+                আমাদের অফার
               </Button>
             </Typography>
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
               href="https://wa.me/88001867158067"
             >
               <Button className=" btnThree bg-gray-100 hover:bg-[#54bfb5] hover:rounded">
-                Contact
+                যোগাযোগ
               </Button>
             </Typography>
           </div>
@@ -75,7 +75,7 @@ const HeroSection = () => {
             Travel makes a <br></br> man Refresh
           </h1>
           <h1 className="text-xl font-normal font-sans text-black">
-            Travel with Hafezia Travel Tours
+            Travel with হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস
           </h1>
 
           <Button className="mr-2 my-4 btn py-4 px-8 text-blue-gray-900">
@@ -97,7 +97,7 @@ const HeroSection = () => {
             Travel makes a <br></br> man Refresh
           </h1>
           <h1 className="text-xl   text-black">
-            Travel with Hafezia Travel Tours
+            Travel with হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস
           </h1>
 
           <Button className="mr-2 my-4 btn py-4 px-8 text-blue-gray-900">

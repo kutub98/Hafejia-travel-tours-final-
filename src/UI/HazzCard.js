@@ -5,25 +5,25 @@ import {
   CardFooter,
   CardHeader,
   Typography,
-} from "@material-tailwind/react";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import VisaProcess from "../Assets/medicalVisa.jpg";
+} from '@material-tailwind/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import VisaProcess from '../Assets/medicalVisa.jpg';
 const ServiceCard = () => {
   return (
     <Card className="my-6 ">
       <CardHeader color="blue-gray" className="relative h-56">
         <Image
           src={VisaProcess}
-          width={"w-full"}
-          height={"full"}
+          width={'w-full'}
+          height={'full'}
           alt="card-image"
         />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Visa Processing
+          ভিসা প্রসেসিং
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -32,7 +32,7 @@ const ServiceCard = () => {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Link href={"/visaProcess"}>
+        <Link href={'/visaProcess'}>
           <Button className="w-full btn">More Details</Button>
         </Link>
       </CardFooter>

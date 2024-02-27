@@ -7,13 +7,13 @@ import { renderToString } from 'react-dom/server';
 import Gallery from '@/UI/Gallery';
 const SITEMAP = [
   {
-    title: 'Details',
-    links: ['About Us', 'Our Office', 'Success'],
+    title: 'বিস্তারিত',
+    links: ['আমাদের সম্পর্কে', 'আমাাদের অফিস', 'সফলতা'],
     herfTag: ['/aboutus', 'https://example.com/careers', { Gallery }],
   },
   {
-    title: 'Help Center',
-    links: ['Facebook', 'WhatsApp', 'Instagram'],
+    title: 'হেল্প সেন্টার',
+    links: ['ফেসবুক', 'ওয়াটসএপে', 'ইন্সট্র্রাগ্রাম'],
     herfTag: [
       'https://www.facebook.com/search/top?q=hafezia%20tours%20and%20travels',
       'https://wa.me/88001867158067',
@@ -21,8 +21,8 @@ const SITEMAP = [
     ],
   },
   {
-    title: 'Resources',
-    links: ['Blog', 'Newsletter', 'Chunoti Blood Bank'],
+    title: 'তথ্য',
+    links: ['ব্লগ', 'নিউজলেটার', 'চুনতী ব্লাড় ব্যাংক'],
     herfTag: [
       'https://example.com/blog',
       'https://example.com/newsletter',
@@ -30,7 +30,7 @@ const SITEMAP = [
     ],
   },
   {
-    title: 'Our Office',
+    title: 'আমাাদের অফিস',
     className: 'bg-white z-50',
     links: [''],
     herfTag: ['OFFICE'],
@@ -39,13 +39,9 @@ const SITEMAP = [
 ];
 const currentYear = new Date().getFullYear();
 
-
 export function Footer() {
   return (
-    <footer
-      className="relative w-full Footer container mx-auto bg-white"
-      
-    >
+    <footer className="relative w-full Footer container mx-auto bg-white">
       <div className="mx-auto w-full max-w-7xl px-8 bg-white text-teal-700">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2 ">
           {SITEMAP.map(({ title, links, herfTag, div }, key) => (
@@ -88,8 +84,8 @@ export function Footer() {
           className="mb-4 text-center font-normal  md:mb-0"
         >
           &copy; {currentYear}{' '}
-          <a href="https://jmkutub1.web.app/">Hafezia Travel Tours </a> &{' '}
-          <a href="https://jmkutub1.web.app/">Kutub Uddin </a>. All Rights
+          <a href="https://jmkutub1.web.app/">হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস </a>{' '}
+          & <a href="https://jmkutub1.web.app/">Kutub Uddin </a>. All Rights
           Reserved.
         </Typography>
         <div className="flex gap-4 sm:justify-center">

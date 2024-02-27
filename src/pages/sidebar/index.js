@@ -11,7 +11,7 @@ import { Cog6ToothIcon } from '@heroicons/react/24/solid';
 import { FaChalkboardUser } from 'react-icons/fa6';
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { PiFlagBannerFill } from 'react-icons/pi';
-import { TbPackages } from 'react-icons/tb';
+import { Tbপ্যাকেজস } from 'react-icons/tb';
 import { RxDashboard } from 'react-icons/rx';
 import { FaClipboardList, FaHotjar } from 'react-icons/fa';
 import { TfiGallery } from 'react-icons/tfi';
@@ -360,8 +360,8 @@ const SidebarWithContentSeparator = () => {
               )}
             </Tooltip>
 
-            {/* Packages  */}
-            <Tooltip content="Packages" placement="right">
+            {/* প্যাকেজস  */}
+            <Tooltip content="প্যাকেজস" placement="right">
               {hideIconText ? (
                 <ListItem
                   className={`cursor-pointer flex items-center px-4 py-3 rounded my-2 transition-all duration-1000   ${
@@ -372,9 +372,9 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('recentPackage')}
                 >
                   <ListItemPrefix>
-                    <TbPackages className="h-5 w-5" />
+                    <Tbপ্যাকেজস className="h-5 w-5" />
                   </ListItemPrefix>
-                  Packages
+                  প্যাকেজস
                 </ListItem>
               ) : (
                 <ListItem
@@ -386,7 +386,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('recentPackage')}
                 >
                   <ListItemPrefix>
-                    <TbPackages className="h-5 w-5 -ml-1" />
+                    <Tbপ্যাকেজস className="h-5 w-5 -ml-1" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -403,9 +403,9 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('PackageList')}
                 >
                   <ListItemPrefix>
-                    <TbPackages className="h-5 w-5" />
+                    <Tbপ্যাকেজস className="h-5 w-5" />
                   </ListItemPrefix>
-                  Packages List
+                  প্যাকেজস List
                 </ListItem>
               ) : (
                 <ListItem
@@ -417,7 +417,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('PackageList')}
                 >
                   <ListItemPrefix>
-                    <TbPackages className="h-5 w-5 -ml-1" />
+                    <Tbপ্যাকেজস className="h-5 w-5 -ml-1" />
                   </ListItemPrefix>
                 </ListItem>
               )}

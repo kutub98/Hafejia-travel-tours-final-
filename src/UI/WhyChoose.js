@@ -16,7 +16,7 @@ const WhyChoose = () => {
   return (
     <div className=" max-w-7xl mx-auto px-6  bg-gray-50 pb-10 pt-1">
       <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-12 animate-pulse text-3xl my-10">
-        Why Choose us
+        আমাদের কেন বেঁচে নিবেন?
       </h1>
       <div className="text-center flex justify-center items-center ">
         {/* <div>
@@ -34,54 +34,54 @@ const WhyChoose = () => {
         <div className="bg-gray-100  hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <Car className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            1. Tailored Journeys
+            ১. উপযোগী যাত্রা
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white  text-center items-center lg:p-6 md:p-4 p-3 rounded shadow-lg text-gray-700">
           <Presentation className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            2. Meticulous Planning
+            ২. সূক্ষ্ম পরিকল্পনা
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <LuBrainCog className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            3. Seamless Experiences
+            ৩.বিরামহীন অভিজ্ঞতা
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <TbHeartHandshake className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            4. Customer Satisfaction
+            ৪. গ্রাহক সন্তুষ্টি
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <TestTubes className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            5. Expertise and Excellence
+            ৫.দক্ষতা এবং শ্রেষ্ঠত্ব
           </h1>
         </div>
         <div className="bg-gray-200  hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <BadgeDollarSign className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            6. No hidden Charge
+            ৬.কোন লুকানো চার্জ নেই
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
           <Bolt className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            7. Quality Assurance
+            ৭.গুণমানের নিশ্চয়তা
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
-          <RefreshCwOff  className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
+          <RefreshCwOff className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
-            8. Hassle-Free Travelling
+            ৮. ঝামেলা-মুক্ত ভ্রমণ
           </h1>
         </div>
       </div>

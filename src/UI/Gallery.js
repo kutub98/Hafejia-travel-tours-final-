@@ -56,7 +56,7 @@ const Gallery = () => {
   return (
     <section className="py-6  dark:bg-gray-800 dark:text-gray-50 px-8">
       <h1 className="text-center  sm:text-black  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
-        Gallery
+        ছবি গ্যালারি
       </h1>
       <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
         {seeMore
@@ -97,14 +97,14 @@ const Gallery = () => {
             onClick={seeLessPhoto}
             className="bg-red-600 justify-center mx-auto hover:bg-[#54bfb5]"
           >
-            See Less
+            কম দেখান
           </Button>
         ) : (
           <Button
             onClick={seeMorePhoto}
             className=" btn justify-center mx-auto hover:bg-[#020540]"
           >
-            See More
+            আরো দেখুন
           </Button>
         )}
       </div>

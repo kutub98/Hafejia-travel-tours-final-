@@ -38,38 +38,38 @@ const Package = () => {
         <div className="bg-gray-100 p-4">
           <p className="flex my-1">
             {' '}
-            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " /> 2ps
-            Photographs
+            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
+            দুকপি ছবি
           </p>
           <p className="flex my-1">
             {' '}
             <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
-            Mothers Nid Card (Photo Copy)
+            মাতার এনআইডি বা বার্থ সার্টিফিকেট(ফটোকপি)
           </p>
           <p className="flex my-1">
             {' '}
             <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
-            Father Nid Card (Photo Copy)
+            পিতার এনআইডি বা বার্থ সার্টিফিকেট(ফটোকপি)
           </p>
           <p className="flex my-1">
             {' '}
             <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
-            BankStatement
+            ব্যাংক স্টেটমন্টে
           </p>
           <p className="flex my-1">
             {' '}
             <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
-            Original Passport
+            অরিজিনাল পার্সপোট (পুরাতনদের জন্য)
           </p>
           <p className="flex my-1">
             {' '}
             <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
-            Payment receipt of Visa fee
+            ভিসা ফি রিসিপ্ট
           </p>
           <p className="flex my-1">
             {' '}
-            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " /> Old
-            Passport
+            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
+            পুরাতন পার্সপোট
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Footer } from '@/Shared/Footer';
 import NavBar from '@/Shared/NavBar';
 import ImageDisplay from '@/UI/Advertise';
+import Translation from '@/transilation/Translation';
 
 import { ArrowUpCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {
@@ -90,9 +91,11 @@ const Rootlayout = ({ children }) => {
       <div className="">
         <ImageDisplay />
       </div>
+      
 
       {/* NavBar */}
       <div className=" sticky top-0 w-full z-10">
+      <Translation />
         <div className="text-center w-full container mx-auto bg-white">
           <h1 className="text-center animate-pulse text-3xl font-bold ">
             On Going Project

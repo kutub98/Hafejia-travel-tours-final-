@@ -25,19 +25,19 @@ import logo from '../Assets/logo.jpg';
 
 const navListMenuItems = [
   {
-    title: 'Why Hafezia Travel',
+    title: 'কেন হাফেজিয়া সেরা',
     link: '#',
   },
   {
-    title: 'Travel Guide',
+    title: 'ভ্রমন নির্দেশনা',
     link: '#',
   },
   {
-    title: 'News',
+    title: 'নিউজ',
     link: '#',
   },
   {
-    title: 'FAQ And Support',
+    title: 'প্রশ্ন ও জিঙ্গাসা',
     link: '#',
   },
 ];
@@ -76,7 +76,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(cur => !cur)}
             >
-              Know More
+              আরো জানুন
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -116,7 +116,7 @@ function NavList() {
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex items-center gap-2 py-2 pr-4 customHover focus:bg-[#54BFB5] focus:text-white!">
-              Visa Processing
+              ভিসা প্রসেসিং
             </ListItem>
           </Typography>
 
@@ -128,7 +128,7 @@ function NavList() {
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
-              Hazh & Umrah
+              হজ্ব ও উমরাহ
             </ListItem>
           </Typography>
 
@@ -162,10 +162,10 @@ function NavList() {
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-              Packages
+              প্যাকেজস
             </ListItem>
           </Typography>
-          {/* About us  */}
+          {/* আমাদের সম্পর্কে  */}
           <Typography
             as="a"
             href="/aboutus"
@@ -173,7 +173,7 @@ function NavList() {
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-              About us
+              আমাদের সম্পর্কে
             </ListItem>
           </Typography>
 
@@ -212,7 +212,7 @@ const NavBar = () => {
           variant="h6"
           className="mr-4 hidden lg:block cursor-pointer py-1.5 lg:ml-2"
         >
-          Hafezia Travel Tours
+          হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস
         </Typography>
         <Typography
           as="a"

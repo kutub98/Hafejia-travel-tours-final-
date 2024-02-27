@@ -38,7 +38,7 @@ const HomePage = () => {
 
       {/* Gellary */}
       <Gallery />
-      {/* About us */}
+      {/* আমাদের সম্পর্কে */}
       {/* <AboutUs /> */}
     </div>
   );

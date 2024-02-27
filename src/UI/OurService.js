@@ -36,7 +36,7 @@ const OurService = () => {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-              Visa Processing
+              ভিসা প্রসেসিং
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -47,7 +47,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+                বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>
@@ -58,7 +58,7 @@ const OurService = () => {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-              Passport
+              পার্সপোট
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -69,7 +69,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/passport'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+               বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>
@@ -80,7 +80,7 @@ const OurService = () => {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-              Hazh & Umrah Processing
+              হজ্ব ও উমরাহ প্রসেসিং
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -91,7 +91,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/hazh'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+               বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>
@@ -113,7 +113,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/policeClearenc'} className="bg-[#54bfb5]">
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+               বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>
@@ -135,7 +135,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+               বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>
@@ -157,7 +157,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/todayPackage'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                More Details
+               বিস্তারিত দেখুন
               </Button>
             </Link>
           </CardFooter>

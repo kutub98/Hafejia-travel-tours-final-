@@ -116,7 +116,7 @@ const ClientReview = () => {
   return (
     <div className="container  clinetReview mx-auto max-w-5xl px-8 my-24">
       <h1 className="text-center lg:text-5xl font-bold  animate-pulse text-3xl lg:my-10 my-14 text-black">
-        What clinet say about us
+        What clinet say আমাদের সম্পর্কে
       </h1>
       <section className="py-6 mx-auto px-10 dark:bg-gray-800 dark:text-gray-50">
         <div className="">
@@ -151,7 +151,6 @@ const ClientReview = () => {
                           />
                         </CardHeader>
                         <CardBody className="relative">
-                          
                           <Typography
                             variant="h6"
                             color="blue-gray"

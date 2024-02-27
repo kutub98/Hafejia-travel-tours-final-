@@ -108,7 +108,7 @@ const Packge = () => {
     // </div>
     <div className=" max-w-7xl  p-2 rounded mx-auto container bg-white my-32">
       <h1 className="text-center  lg:text-4xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10  rounded-xl lg:w-2/5 justify-center mx-auto ">
-        Recent Package
+        সাম্প্র্রতিক প্যাকেজস
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-auto">
         {ClinetImage.map((img, index) => (
@@ -156,7 +156,7 @@ const Packge = () => {
                 <CardFooter className="pt-3">
                   <Typography as="a" href="/package">
                     <Button size="lg" fullWidth={true}>
-                      Reserve
+                      বিস্তারিত দেখুন
                     </Button>
                   </Typography>
                 </CardFooter>
