@@ -51,7 +51,7 @@ function NavListMenu() {
         <div>
           <Typography
             color="white"
-            className="flex items-center ml-2 customHover px-3 py-2  "
+            className="flex items-center ml-2 hover:bg-blue-gray-100 hover:text-black px-3 py-2  "
           >
             {title}
           </Typography>
