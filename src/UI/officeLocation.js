@@ -3,7 +3,7 @@ import React from 'react';
 const OfficeLocation = () => {
   return (
     <div className="-mt-8">
-      <p>j অফিস-সিকদার টাউওয়ার নিচতলা</p>
+      <p> অফিস-সিকদার টাউওয়ার নিচতলা</p>
       <p> ইউনিয়ন ব্যাংকের নিচে </p>
       <p>মেইন রোড় আমিরাবাদ, লোহাগাড়া, চট্টগ্র্রাম.</p>
 

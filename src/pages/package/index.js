@@ -6,7 +6,7 @@ import { BsCheck } from 'react-icons/bs';
 const Package = () => {
   return (
     <div className="container mx-auto max-w-7xl px-8">
-      <title>Our Package || Hafejia Travel Tours</title>
+      <title>আমাদের প্যাকেজস ||হাফেজিয়া ট্র্রাভেলস ট্যুরস</title>
       <div className="w-full h-auto">
         <Image
           src={packageImg}
@@ -19,7 +19,7 @@ const Package = () => {
       {/* <div className="flex h-96 justify-center items-center"> */}
       <div className="">
         <h1 className="text-center justify-center items-center">
-          Our Package || Hafejia Travel Tours
+          আমাদের প্যাকেজস ||হাফেজিয়া ট্র্রাভেলস ট্যুরস
         </h1>{' '}
         <br></br>
         {/* <h1 className="text-center my-auto animate-pulse textColor text-white lg:text-7xl ltext-2xl">
@@ -68,7 +68,7 @@ const Package = () => {
           </p>
           <p className="flex my-1">
             {' '}
-            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />{' '}
+            <BsCheck className="w-8 h-8 mr-2  p-2 rounded-full bg-white " />
             পুরাতন পার্সপোট
           </p>
         </div>
