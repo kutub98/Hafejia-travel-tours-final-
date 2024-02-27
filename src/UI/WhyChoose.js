@@ -1,9 +1,17 @@
 import React from 'react';
 import { Typography } from '@material-tailwind/react';
-import { Presentation, Car } from 'lucide-react';
+import {
+  Presentation,
+  Car,
+  BadgeDollarSign,
+  TestTubes,
+  Bolt,
+  RefreshCwOff,
+} from 'lucide-react';
 import { LuBrainCog } from 'react-icons/lu';
 import { TbHeartHandshake } from 'react-icons/tb';
 import { Button } from '@material-tailwind/react';
+
 const WhyChoose = () => {
   return (
     <div className=" max-w-7xl mx-auto px-6  bg-gray-50 pb-10 pt-1">
@@ -49,28 +57,28 @@ const WhyChoose = () => {
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
-          <TbHeartHandshake className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
+          <TestTubes className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
             5. Expertise and Excellence
           </h1>
         </div>
         <div className="bg-gray-200  hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
-          <TbHeartHandshake className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
+          <BadgeDollarSign className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
             6. No hidden Charge
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
-          <TbHeartHandshake className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
+          <Bolt className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
             7. Quality Assurance
           </h1>
         </div>
         <div className="bg-gray-100 hover:bg-[#54bfb5]  hover:text-white rounded text-center items-center lg:p-6 md:p-4 p-3  shadow-lg text-gray-700">
-          <TbHeartHandshake className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
+          <RefreshCwOff  className="w-10 h-10  hover:rotate-[360deg] text-center mx-auto" />
 
           <h1 className="text-xl font-bold  hover:text-white my-3">
             8. Hassle-Free Travelling
