@@ -74,7 +74,7 @@ const HeroSection = () => {
             className="flex justify-center items-center h-96 w-96 bg-white"
             loop={true}
           />
-          <div className=" lottiLogo absolute  lg:top-[112px] left-[128px] md:left-[188px] lg:left-[52px]  h-40 w-40 ">
+          <div className=" lottiLogo absolute    h-40 w-40 ">
             <Image
               src={logo}
               height={200}
