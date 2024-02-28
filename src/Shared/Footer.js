@@ -13,16 +13,16 @@ const SITEMAP = [
   },
   {
     title: 'হেল্প সেন্টার',
-    links: ['ফেসবুক', 'ওয়াটসএপে', 'ইন্সট্র্রাগ্রাম'],
+    links: ['হোয়াটসঅ্যাপ', 'মোবাইল', 'ফেসবুক'],
     herfTag: [
       'https://www.facebook.com/search/top?q=hafezia%20tours%20and%20travels',
+      '88001867158067',
       'https://wa.me/88001867158067',
-      'https://www.instagram.com/',
     ],
   },
   {
     title: 'তথ্য',
-    links: ['ব্লগ', 'নিউজলেটার', 'চুনতী ব্লাড় ব্যাংক'],
+    links: ['ব্লগ', 'নিউজলেটার', 'চুনতি ব্লাড ব্যাংক'],
     herfTag: [
       'https://example.com/blog',
       'https://example.com/newsletter',
@@ -30,7 +30,7 @@ const SITEMAP = [
     ],
   },
   {
-    title: 'আমাাদের অফিস',
+    title: 'আমাদের ঠিকানা',
     className: 'bg-white z-50',
     links: [''],
     herfTag: ['OFFICE'],
@@ -84,7 +84,7 @@ export function Footer() {
           className="mb-4 text-center font-normal  md:mb-0"
         >
           &copy; {currentYear}{' '}
-          <a href="https://jmkutub1.web.app/">হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস </a>{' '}
+          <a href="https://jmkutub1.web.app/">হাফেজিয়া ট্যুর এন্ড ট্রাভেলস </a>{' '}
           & <a href="https://jmkutub1.web.app/">Kutub Uddin </a>. All Rights
           Reserved.
         </Typography>

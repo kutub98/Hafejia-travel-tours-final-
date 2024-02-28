@@ -22,7 +22,7 @@ const OurService = () => {
   return (
     <div className="container mt-10 services max-w-7xl mx-auto bg-white p-2 rounded">
       <h1 className="text-center text-black lg:text-5xl font-bold lg:mt-32  lg:mb-16 animate-pulse text-3xl ">
-        Our Services
+        আমাদের সেবা সমূহ
       </h1>
       <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8">
         <Card className="my-6 ">
@@ -47,7 +47,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-                বিস্তারিত দেখুন
+                আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>
@@ -69,7 +69,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/passport'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-               বিস্তারিত দেখুন
+                আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>
@@ -80,7 +80,7 @@ const OurService = () => {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-              হজ্ব ও উমরাহ প্রসেসিং
+              হজ্ব ও ওমরাহ প্রসেসিং
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -91,7 +91,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/hazh'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-               বিস্তারিত দেখুন
+                আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>
@@ -113,7 +113,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/policeClearenc'} className="bg-[#54bfb5]">
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-               বিস্তারিত দেখুন
+               আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>
@@ -135,7 +135,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-               বিস্তারিত দেখুন
+               আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>
@@ -157,7 +157,7 @@ const OurService = () => {
           <CardFooter className="pt-0">
             <Link href={'/todayPackage'}>
               <Button className="w-full btnThree hover:bg-[#54bfb5]">
-               বিস্তারিত দেখুন
+               আরো বিস্তারিত...
               </Button>
             </Link>
           </CardFooter>

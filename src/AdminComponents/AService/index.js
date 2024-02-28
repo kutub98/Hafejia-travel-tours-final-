@@ -20,8 +20,9 @@ const Aservices = () => {
       serialNumber: formData.length + 1,
       img: '',
       servicesName: '',
-     
+
       servicesDetails: '',
+      serviceInfo: '',
     };
     setFormData([...formData, newRow]);
   };
@@ -126,6 +127,15 @@ const Aservices = () => {
                           Services Details
                         </Typography>
                       </th>
+                      <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="font-normal leading-none opacity-70"
+                        >
+                          Information
+                        </Typography>
+                      </th>
 
                       <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
                         <Typography
@@ -184,6 +194,17 @@ const Aservices = () => {
                             type="textarea"
                             value={row?.servicesDetails}
                             label="Services Details"
+                            className="w-full"
+                            onChange={e =>
+                              handleInputChange(index, 'servicesDetails', e)
+                            }
+                          />
+                        </td>
+                        <td className="mx-3 ">
+                          <Input
+                            type="textarea"
+                            value={row?.serviceInfo}
+                            label="serviceInfo"
                             className="w-full"
                             onChange={e =>
                               handleInputChange(index, 'servicesDetails', e)

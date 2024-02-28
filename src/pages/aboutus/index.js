@@ -9,6 +9,7 @@ import Image from 'next/image';
 import React from 'react';
 import ceo from '../../Assets/CEO/nazrul.jpg';
 import Rootlayout from '@/Layout/Rootlayout';
+import Gallery from '@/UI/Gallery';
 
 const AboutUs = () => {
   return (
@@ -72,6 +73,7 @@ const AboutUs = () => {
           </CardBody>
         </Card>
       </div>
+      <Gallery />
     </div>
   );
 };

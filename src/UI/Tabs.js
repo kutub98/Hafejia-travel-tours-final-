@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 function CustomTabs() {
   const tabs = [
     // { label: "All", content: <OurService/> },
-
-    
   ];
 
   const [activeTab, setActiveTab] = useState(0);
@@ -17,7 +15,7 @@ function CustomTabs() {
     <div className="container   mx-auto  my-4  lg:my-24">
       <div className="max-w-7xl w-full mx-auto">
         <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-16 animate-pulse text-3xl my-10">
-          Our Services
+          আমাদের সেবা সমূহ
         </h1>
         <div className=" mx-auto flex xl:justify-between justify-between md:justify-center ">
           <h1 className=" lg:text-left sm:text-center  text-2xl sm:text-4xl font-semibold "></h1>

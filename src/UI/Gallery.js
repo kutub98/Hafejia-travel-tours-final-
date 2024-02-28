@@ -55,7 +55,7 @@ const Gallery = () => {
   };
   return (
     <section className="py-6  dark:bg-gray-800 dark:text-gray-50 px-8">
-      <h1 className="text-center  sm:text-black  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
+      <h1 className="text-center  sm:text-black  lg:text-5xl font-bold xl:mt-10 lg:mt-20 lg:mb-10 animate-pulse text-3xl my-10">
         ছবি গ্যালারি
       </h1>
       <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">

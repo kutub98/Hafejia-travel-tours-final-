@@ -221,12 +221,12 @@ span {
   width: 100%;
   padding: 40px 0px;
 }
-/* .services {
-  background: url('../Assets/BG/services.svg');
+.CustomBg {
+  background: url('../Assets/BG/3.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: auto;
   width: 100%;
   padding: 40px 0px;
-} */
+}

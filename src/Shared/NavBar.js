@@ -108,6 +108,17 @@ function NavList() {
     <>
       <div>
         <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-lg">
+          {/* HAZE UMRA  */}
+          <Typography
+            as="a"
+            href="/umrahAndHaze"
+            color="white"
+            className="customHover focus:bg-[#54BFB5] focus:text-white"
+          >
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
+              হজ্ব ও ওমরাহ
+            </ListItem>
+          </Typography>
           {/* visa process  */}
           <Typography
             as="a"
@@ -120,18 +131,6 @@ function NavList() {
             </ListItem>
           </Typography>
 
-          {/* HAZE UMRA  */}
-          <Typography
-            as="a"
-            href="/umrahAndHaze"
-            color="white"
-            className="customHover focus:bg-[#54BFB5] focus:text-white"
-          >
-            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
-              হজ্ব ও উমরাহ
-            </ListItem>
-          </Typography>
-
           {/* Pasport  */}
           <Typography
             as="a"
@@ -140,7 +139,7 @@ function NavList() {
             className="customHover lg:hidden focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-              Pasport
+              বিমান টিকেট
             </ListItem>
           </Typography>
           {/* Package  */}
@@ -162,7 +161,7 @@ function NavList() {
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-              প্যাকেজস
+              প্যাকেজ
             </ListItem>
           </Typography>
           {/* আমাদের সম্পর্কে  */}
@@ -212,7 +211,7 @@ const NavBar = () => {
           variant="h6"
           className="mr-4 hidden lg:block cursor-pointer py-1.5 lg:ml-2"
         >
-          হাফেজিয়া ট্যুরস এন্ড ট্রাভেলস
+          হাফেজিয়া ট্যুর এন্ড ট্রাভেলস
         </Typography>
         <Typography
           as="a"

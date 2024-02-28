@@ -5,6 +5,7 @@ import HeroSection from '@/UI/HeroSection';
 import HotDeals from '@/UI/HotDeals';
 import OurService from '@/UI/OurService';
 import Packge from '@/UI/Packge';
+import Subscribe from '@/UI/Subscribe';
 import WhyChoose from '@/UI/WhyChoose';
 import AboutUs from '@/pages/aboutus';
 
@@ -14,10 +15,6 @@ const HomePage = () => {
     <div className="">
       {/* HeroSection */}
       <HeroSection />
-
-      {/* HappyClient */}
-      <HappyClient />
-
       {/* OurService */}
       <OurService />
 
@@ -36,8 +33,12 @@ const HomePage = () => {
 
       <WhyChoose />
 
+       {/* HappyClient */}
+       <HappyClient />
+
+      <Subscribe/>
       {/* Gellary */}
-      <Gallery />
+     
       {/* আমাদের সম্পর্কে */}
       {/* <AboutUs /> */}
     </div>
