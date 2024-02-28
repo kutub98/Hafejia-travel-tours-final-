@@ -7,11 +7,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import packge1 from '../Assets/Package2.jpg';
 import packge2 from '../Assets/Package3.jpg';
 import air from '../Assets/air.png';
-import packge3 from '../Assets/HappyClients/image21.jpeg';
+import packge3 from '../Assets/HappyClients/image20.jpeg';
 import saf from '../Assets/saf.jpg';
 import Image from 'next/image';
 import { Button, Typography } from '@material-tailwind/react';
 import lottiFile from '../../lottie.json';
+import logo from '../Assets/logo.jpg';
 const HeroSection = () => {
   return (
     <Carousel
@@ -21,7 +22,7 @@ const HeroSection = () => {
       showThumbs={false}
       swipeable={false}
       interval={15000} // 5 seconds
-      className="container mx-auto px-5  CustomBg "
+      className="container mx-auto px-5  CustomBg bg-white "
     >
       <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center  lg:py-16">
         <div className=" px-12 text-left lg:col-span-3 md:col-span-3 ">
@@ -56,7 +57,7 @@ const HeroSection = () => {
             </Typography>
           </div>
         </div>
-        <div className="lg:col-span-2 md:col-span-2 lg:pr-10 ">
+        {/* <div className="lg:col-span-2 md:col-span-2 lg:pr-10 ">
           <Image
             src={packge3}
             alt="Image 3"
@@ -65,15 +66,24 @@ const HeroSection = () => {
             height={1200}
             width={500}
           />
-        </div>
+        </div> */}
 
-        {/* <div className="flex flex-col w-full justify-center items-center">
+        <div className="flex flex-col w-full justify-center items-center relative bg-transparent">
           <Lottie
             animationData={lottiFile}
             className="flex justify-center items-center h-96 w-96 bg-white"
             loop={true}
           />
-        </div> */}
+          <div className=" lottiLogo absolute  lg:top-[112px] left-[128px] md:left-[188px] lg:left-[52px]  h-40 w-40 ">
+            <Image
+              src={logo}
+              height={200}
+              width={200}
+              alt="logo"
+              className=" h-full w-full  rounded-full"
+            />
+          </div>
+        </div>
       </div>
       {/* <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center">
         <div className="px-12 text-left lg:col-span-3 md:col-span-3 ">

@@ -10,7 +10,7 @@ import image7 from '../Assets/HappyClients/image17.jpeg';
 import image8 from '../Assets/HappyClients/image18.jpeg';
 import image9 from '../Assets/HappyClients/image19.jpeg';
 import image10 from '../Assets/HappyClients/image20.jpeg';
-import image11 from '../Assets/HappyClients/image21.jpeg';
+import image11 from '../Assets/HappyClients/image20.jpeg';
 import image12 from '../Assets/HappyClients/image22.jpeg';
 import image13 from '../Assets/HappyClients/image23.jpeg';
 import image14 from '../Assets/HappyClients/image24.jpeg';

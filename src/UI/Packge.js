@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import image15 from '../Assets/HappyClients/image21.jpeg';
+import image15 from '../Assets/HappyClients/image20.jpeg';
 import image16 from '../Assets/Package3.jpg';
 import image17 from '../Assets/Package2.jpg';
 import { Carousel } from 'react-responsive-carousel';

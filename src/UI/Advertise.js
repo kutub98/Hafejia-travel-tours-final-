@@ -1,7 +1,7 @@
-import Image from "next/image";
-import displyImage from "../Assets/HappyClients/image21.jpeg";
-import { useState, useEffect } from "react";
-import { Button } from "@material-tailwind/react";
+import Image from 'next/image';
+import displyImage from '../Assets/21.jpg';
+import { useState, useEffect } from 'react';
+import { Button } from '@material-tailwind/react';
 
 const ImageDisplay = () => {
   const [showImage, setShowImage] = useState(false);
@@ -18,8 +18,8 @@ const ImageDisplay = () => {
     };
 
     const checkLocalStorage = () => {
-      const isImageVisible = localStorage.getItem("isImageVisible");
-      if (isImageVisible === "true") {
+      const isImageVisible = localStorage.getItem('isImageVisible');
+      if (isImageVisible === 'true') {
         showImageAfterDelay();
       }
     };
@@ -30,13 +30,13 @@ const ImageDisplay = () => {
     // Start showing the image after 40 seconds
     const timer1 = setTimeout(() => {
       showImageAfterDelay();
-      localStorage.setItem("isImageVisible", "true");
+      localStorage.setItem('isImageVisible', 'true');
     }, 40000);
 
     // Set an interval to show the image every 5 minutes
     const timer2 = setInterval(() => {
       showImageAfterDelay();
-      localStorage.setItem("isImageVisible", "true");
+      localStorage.setItem('isImageVisible', 'true');
     }, 300000);
 
     // Clean up timers to avoid memory leaks
@@ -44,13 +44,13 @@ const ImageDisplay = () => {
       clearTimeout(timer1);
       clearInterval(timer2);
       hideImage();
-      localStorage.setItem("isImageVisible", "false");
+      localStorage.setItem('isImageVisible', 'false');
     };
   }, []);
 
   const handleCancelClick = () => {
     setShowImage(false);
-    localStorage.setItem("isImageVisible", "false");
+    localStorage.setItem('isImageVisible', 'false');
   };
 
   return (
@@ -63,6 +63,7 @@ const ImageDisplay = () => {
               alt="Your Image"
               className="advertiseImg"
             />
+
             <Button
               className="bg-[#54bfb5] text-white"
               onClick={handleCancelClick}
