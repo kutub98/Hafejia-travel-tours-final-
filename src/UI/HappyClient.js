@@ -125,8 +125,7 @@ const HappyClient = () => {
                         src={image.imgSrc}
                         alt="card-image"
                         objectFit="contain"
-                        width={1200}
-                        height={500}
+                        className="w-full"
                       />
                     </CardHeader>
                   </Card>

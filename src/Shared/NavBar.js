@@ -21,7 +21,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import logo from '../Assets/logo.jpg';
+import logo from '../Assets/logo.png';
 
 const navListMenuItems = [
   {
@@ -37,7 +37,7 @@ const navListMenuItems = [
     link: '#',
   },
   {
-    title: 'প্রশ্ন ও জিঙ্গাসা',
+    title: 'প্রশ্ন ও জিজ্ঞাসা',
     link: '#',
   },
 ];
@@ -142,7 +142,7 @@ function NavList() {
               বিমান টিকেট
             </ListItem>
           </Typography>
-         
+
           {/* প্যাকেজ  */}
           <Typography
             as="a"
@@ -193,16 +193,23 @@ const NavBar = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto w-full overflow-auto py-2 navBar text-white px-8">
-      <div className="flex items-center justify-between">
+    <Navbar className="mx-auto w-full overflow-auto py-1 navBar border-none shadow-none rounded-none text-teal-500 px-8 items-center">
+      <div className="flex items-center justify-between text-teal-500">
+        {/* logo  */}
         <Typography
           as="a"
           href="/"
           variant="h6"
-          className="mr-4 hidden lg:block cursor-pointer py-1.5 lg:ml-2"
+          className="mr-4  justify-center items-center my-auto hidden lg:block cursor-pointer  lg:ml-2"
         >
-          হাফেজিয়া ট্যুর এন্ড ট্রাভেলস
+          <Image
+            alt="logo"
+            // objectFit="contain"
+            className=" max-w-[300px] mt-4  h-[100px]  sm:hidden lg:block md:hidden dark:bg-gray-500 "
+            src={logo}
+          />
         </Typography>
+
         <Typography
           as="a"
           href="/"
@@ -210,10 +217,8 @@ const NavBar = () => {
           className="mr-4  cursor-pointer py-1.5 lg:ml-2 sm:block lg:hidden md:block rounded-full"
         >
           <Image
-            width={16}
-            height={16}
             alt="logo"
-            className="w-12 h-12  sm:block lg:hidden md:block rounded-full ri ri dark:bg-gray-500 ri ri"
+            className=" max-w-[200px] mt-4 sm:block lg:hidden md:block  dark:bg-gray-500 "
             src={logo}
           />
         </Typography>
@@ -221,14 +226,7 @@ const NavBar = () => {
         <div className="hidden lg:block">
           <NavList />
         </div>
-        {/* <div className="hidden gap-2 lg:flex">
-          <Button className="btnTwo" size="sm">
-            Log In
-          </Button>
-          <Button className="btn" size="sm">
-            Sign In
-          </Button>
-        </div> */}
+
         <IconButton
           variant="text"
           color="white"
@@ -244,14 +242,6 @@ const NavBar = () => {
       </div>
       <Collapse open={openNav}>
         <NavList className="text-white" />
-        {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button className="btnTwo" size="sm" color="white" fullWidth>
-            Log In
-          </Button>
-          <Button className="btn" size="sm" fullWidth>
-            Sign In
-          </Button>
-        </div> */}
       </Collapse>
     </Navbar>
   );

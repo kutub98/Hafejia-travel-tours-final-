@@ -8,7 +8,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
 import { Button, Typography } from '@material-tailwind/react';
 import lottiFile from '../../lottie.json';
-import logo from '../Assets/logo.jpg';
+import animation from '../../Animation.json';
+import logo1 from '../Assets/logo1.jpg';
 const HeroSection = () => {
   return (
     <Carousel
@@ -67,12 +68,12 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center items-center relative bg-transparent">
           <Lottie
             animationData={lottiFile}
-            className="flex justify-center items-center h-96 w-96 bg-white"
+            className="flex justify-center items-center h-96 w-96 "
             loop={true}
           />
           <div className=" lottiLogo absolute h-40 w-40 ">
             <Image
-              src={logo}
+              src={logo1}
               height={200}
               width={200}
               alt="logo"

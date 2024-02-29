@@ -12,8 +12,8 @@ const Umrah = () => {
           src={umrah}
           alt="umrah"
           objectFit="contain"
-          width={1200}
-          height={500}
+          className="w-full"
+          
         />
       </div>
       {/* <div className="flex h-96 justify-center items-center"> */}

@@ -93,7 +93,7 @@ const Rootlayout = ({ children }) => {
       </div>
 
       {/* NavBar */}
-      <div className=" sticky top-0 w-full z-10">
+      <div className=" sticky top-0 w-full z-[999]">
         <Translation />
         {/* NabVar  */}
         <NavBar />
