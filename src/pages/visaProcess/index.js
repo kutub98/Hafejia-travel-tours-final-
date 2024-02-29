@@ -11,7 +11,7 @@ const VisaProcess = () => {
         <Image
           src={visaImage}
           alt="visaImage"
-          layout="responsive"
+          objectFit="contain"
           width={1200}
           height={500}
         />

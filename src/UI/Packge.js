@@ -115,7 +115,7 @@ const Packge = () => {
           <div className=" mx-auto" key={index}>
             <Card className="w-full lg:max-w-[26rem] max-w-[20rem] shadow-lg hover:bg-gray-100">
               <CardHeader floated={false} color="blue-gray">
-                <Image src={img.imgSrc} />
+                <Image src={img.imgSrc} alt="card" />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
               </CardHeader>
               <div className=" hover:text-white hover:duration-500">

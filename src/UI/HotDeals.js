@@ -91,7 +91,7 @@ const HotDeals = () => {
                         <Image
                           src={image.imgSrc}
                           alt="card-image"
-                          layout="responsive"
+                          objectFit="contain"
                           className="h-full w-full object-cover"
                         />
                       </CardHeader>

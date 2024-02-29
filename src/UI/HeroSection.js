@@ -4,11 +4,7 @@
 import Lottie from 'lottie-react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import packge1 from '../Assets/Package2.jpg';
-import packge2 from '../Assets/Package3.jpg';
-import air from '../Assets/air.png';
-import packge3 from '../Assets/HappyClients/image20.jpeg';
-import saf from '../Assets/saf.jpg';
+
 import Image from 'next/image';
 import { Button, Typography } from '@material-tailwind/react';
 import lottiFile from '../../lottie.json';
@@ -36,7 +32,7 @@ const HeroSection = () => {
               ট্রাভেলস অন্যন্য
             </h1>
           </div>
-          {/* <h1 className="text-xl font-normal font-sans text-black">
+          {/* <h1 className="text-xl font-normal  text-black">
             হাফেজিয়া ট্যুর এন্ড ট্রাভেলস সাথে ভ্রমন করুন
           </h1> */}
           <div className="flex justify-between w-64 my-5">
@@ -62,19 +58,19 @@ const HeroSection = () => {
             src={packge3}
             alt="Image 3"
             className=""
-            layout="responsive"
+            objectFit="contain"
             height={1200}
             width={500}
           />
         </div> */}
 
-        <div className="flex flex-col w-full justify-center items-center relative bg-transparent">
+        <div className="flex flex-col justify-center items-center relative bg-transparent">
           <Lottie
             animationData={lottiFile}
             className="flex justify-center items-center h-96 w-96 bg-white"
             loop={true}
           />
-          <div className=" lottiLogo absolute    h-40 w-40 ">
+          <div className=" lottiLogo absolute h-40 w-40 ">
             <Image
               src={logo}
               height={200}
@@ -85,51 +81,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      {/* <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center">
-        <div className="px-12 text-left lg:col-span-3 md:col-span-3 ">
-          <h1 className="text-3xl lg:text-7xl font-bold text-blue-gray-800 my-4">
-            Travel makes a <br></br> man Refresh
-          </h1>
-          <h1 className="text-xl font-normal font-sans text-black">
-            Travel with হাফেজিয়া ট্যুর এন্ড ট্রাভেলস
-          </h1>
-
-          <Button className="mr-2 my-4 btn py-4 px-8 text-blue-gray-900">
-            Our Offers
-          </Button>
-          <Button className="mr-2 py-4 px-8 my-4">Contact</Button>
-        </div>
-        <div className="lg:col-span-2 md:col-span-2 lg:pr-10 ">
-          <Image
-            src={packge2}
-            alt="Image 3"
-            className=" h-auto w-full object-fit shadow-2xl"
-          />
-        </div>
-      </div>
-      <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center">
-        <div className="px-12 text-left lg:col-span-3 md:col-span-3 ">
-          <h1 className="text-3xl lg:text-7xl font-bold text-blue-gray-800 my-4">
-            Travel makes a <br></br> man Refresh
-          </h1>
-          <h1 className="text-xl   text-black">
-            Travel with হাফেজিয়া ট্যুর এন্ড ট্রাভেলস
-          </h1>
-
-          <Button className="mr-2 my-4 btn py-4 px-8 text-blue-gray-900">
-            Our Offers
-          </Button>
-          <Button className="mr-2  py-4 px-8 my-4">Contact</Button>
-        </div>
-        <div className="lg:col-span-2 md:col-span-2 lg:pr-10 ">
-          <img
-            alt="Image 3"
-            // src={packge1}
-            src="https://images.unsplash.com/photo-1619941400844-ec5ef7495cb8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFpcnBsYW5lfGVufDB8fDB8fHww"
-            className=" h-auto w-full object-fit shadow-2xl"
-          />
-        </div>
-      </div> */}
     </Carousel>
   );
 };

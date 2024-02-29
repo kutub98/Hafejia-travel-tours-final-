@@ -22,9 +22,7 @@ const HomePage = () => {
       <HotDeals />
 
       {/* OurService */}
-      {/* <div>
-        <CustomTabs />
-      </div> */}
+      
 
       {/* Packge */}
       <Packge />

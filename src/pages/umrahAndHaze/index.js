@@ -11,7 +11,7 @@ const Umrah = () => {
         <Image
           src={umrah}
           alt="umrah"
-          layout="responsive"
+          objectFit="contain"
           width={1200}
           height={500}
         />

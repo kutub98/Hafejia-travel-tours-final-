@@ -131,29 +131,19 @@ function NavList() {
             </ListItem>
           </Typography>
 
-          {/* Pasport  */}
+          {/*  বিমান টিকেট  */}
           <Typography
             as="a"
             href="/passport"
             color="white"
-            className="customHover lg:hidden focus:bg-[#54BFB5] focus:text-white"
+            className="customHover  focus:bg-[#54BFB5] focus:text-white"
           >
             <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
               বিমান টিকেট
             </ListItem>
           </Typography>
-          {/* Package  */}
-          {/* <Typography
-          as="a"
-          href="/todayPackage"
-          color="white"
-          className="customHover focus:bg-[#54BFB5] focus:text-white"
-        >
-          <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
-            Package
-          </ListItem>
-        </Typography> */}
-          {/* AirTicke  */}
+         
+          {/* প্যাকেজ  */}
           <Typography
             as="a"
             href="/package"
@@ -231,14 +221,14 @@ const NavBar = () => {
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-2 lg:flex">
+        {/* <div className="hidden gap-2 lg:flex">
           <Button className="btnTwo" size="sm">
             Log In
           </Button>
           <Button className="btn" size="sm">
             Sign In
           </Button>
-        </div>
+        </div> */}
         <IconButton
           variant="text"
           color="white"
@@ -254,14 +244,14 @@ const NavBar = () => {
       </div>
       <Collapse open={openNav}>
         <NavList className="text-white" />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+        {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button className="btnTwo" size="sm" color="white" fullWidth>
             Log In
           </Button>
           <Button className="btn" size="sm" fullWidth>
             Sign In
           </Button>
-        </div>
+        </div> */}
       </Collapse>
     </Navbar>
   );

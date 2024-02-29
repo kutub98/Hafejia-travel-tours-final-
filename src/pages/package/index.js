@@ -11,7 +11,7 @@ const Package = () => {
         <Image
           src={packageImg}
           alt="package"
-          layout="responsive"
+          objectFit="contain"
           width={1200}
           height={500}
         />

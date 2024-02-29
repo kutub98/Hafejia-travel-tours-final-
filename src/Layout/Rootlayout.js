@@ -86,7 +86,7 @@ const Rootlayout = ({ children }) => {
 
   return (
     <div className="">
-      {/*AdverTize ImageDisplay */}
+      {/* ImageDisplay */}
 
       <div className="">
         <ImageDisplay />
@@ -95,11 +95,7 @@ const Rootlayout = ({ children }) => {
       {/* NavBar */}
       <div className=" sticky top-0 w-full z-10">
         <Translation />
-        {/* <div className="text-center w-full container mx-auto bg-white">
-          <h1 className="text-center animate-pulse text-3xl font-bold ">
-            On Going Project
-          </h1>
-        </div> */}
+        {/* NabVar  */}
         <NavBar />
       </div>
 

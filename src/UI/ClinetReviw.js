@@ -161,7 +161,7 @@ const ClientReview = () => {
                           <Typography
                             variant="h5"
                             color="gray"
-                            className="mb-8 font-normal h-auto"
+                            className="mb-8  h-auto"
                           >
                             Like so many organizations these days, Autodesk is a
                             company in transition.
