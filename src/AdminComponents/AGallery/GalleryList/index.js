@@ -81,60 +81,62 @@ const GalleryList = () => {
             </tr>
           </thead>
           <tbody>
-            {TABLE_ROWS.map(({ galleryImg, galleryTitle, galleryDesc }, index) => {
-              const isLast = index === TABLE_ROWS.length - 1;
-              const classes = isLast
-                ? 'p-4'
-                : 'p-4 border-b border-blue-gray-50';
+            {TABLE_ROWS.map(
+              ({ galleryImg, galleryTitle, galleryDesc }, index) => {
+                const isLast = index === TABLE_ROWS.length - 1;
+                const classes = isLast
+                  ? 'p-4'
+                  : 'p-4 border-b border-blue-gray-50';
 
-              return (
-                <tr key={name}>
-                  <td className={classes}>
-                    <div className="flex items-center gap-3">
-                      <Avatar src={galleryImg} alt={galleryTitle} size="sm" />
-                    </div>
-                  </td>
-                  <td className={classes}>
-                    <div className="flex flex-col">
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal"
-                      >
-                        {galleryTitle}
-                      </Typography>
-                    </div>
-                  </td>
-                  <td className={classes}>
-                    <div className="flex flex-col">
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="font-normal"
-                      >
-                        {
-                          <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="font-normal opacity-70"
-                          >
-                            {galleryDesc}
-                          </Typography>
-                        }
-                      </Typography>
-                    </div>
-                  </td>
+                return (
+                  <tr key={name}>
+                    <td className={classes}>
+                      <div className="flex items-center gap-3">
+                        <Avatar src={galleryImg} alt={galleryTitle} size="sm" />
+                      </div>
+                    </td>
+                    <td className={classes}>
+                      <div className="flex flex-col">
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="font-normal"
+                        >
+                          {galleryTitle}
+                        </Typography>
+                      </div>
+                    </td>
+                    <td className={classes}>
+                      <div className="flex flex-col">
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="font-normal"
+                        >
+                          {
+                            <Typography
+                              variant="small"
+                              color="blue-gray"
+                              className="font-normal opacity-70"
+                            >
+                              {galleryDesc}
+                            </Typography>
+                          }
+                        </Typography>
+                      </div>
+                    </td>
 
-                  <td className={classes}>
-                    <Tooltip content="Edit User">
-                      <IconButton variant="text">
-                        <PencilIcon className="h-4 w-4" />
-                      </IconButton>
-                    </Tooltip>
-                  </td>
-                </tr>
-              );
-            })}
+                    <td className={classes}>
+                      <Tooltip content="Edit User">
+                        <IconButton variant="text">
+                          <PencilIcon className="h-4 w-4" />
+                        </IconButton>
+                      </Tooltip>
+                    </td>
+                  </tr>
+                );
+              },
+            )}
           </tbody>
         </table>
       </CardBody>

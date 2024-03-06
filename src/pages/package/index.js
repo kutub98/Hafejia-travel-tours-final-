@@ -13,7 +13,6 @@ const Package = () => {
           alt="package"
           objectFit="contain"
           className="w-full"
-          
         />
       </div>
       {/* <div className="flex h-96 justify-center items-center"> */}

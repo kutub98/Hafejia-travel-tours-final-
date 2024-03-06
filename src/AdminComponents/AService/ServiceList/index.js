@@ -44,7 +44,7 @@ const ServiceList = () => {
         <div className="mb-8 flex items-center justify-between gap-8">
           <div>
             <Typography variant="h5" color="blue-gray">
-              Service List 
+              Service List
             </Typography>
           </div>
           <div className="flex shrink-0 flex-col gap-2 sm:flex-row">

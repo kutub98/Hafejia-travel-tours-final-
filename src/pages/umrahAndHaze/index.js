@@ -8,13 +8,7 @@ const Umrah = () => {
     <div className="container mx-auto max-w-7xl px-8">
       <title>Umrah ভিসা প্রসেসিং || Hafejia Travel Tours</title>
       <div className="w-full h-auto">
-        <Image
-          src={umrah}
-          alt="umrah"
-          objectFit="contain"
-          className="w-full"
-          
-        />
+        <Image src={umrah} alt="umrah" objectFit="contain" className="w-full" />
       </div>
       {/* <div className="flex h-96 justify-center items-center"> */}
       <div className="">

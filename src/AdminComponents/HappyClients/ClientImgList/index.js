@@ -54,8 +54,8 @@ const ClientImageList = () => {
               color="white"
             >
               <Button className="flex items-center gap-3" size="sm">
-                <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add
-                claient List
+                <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add claient
+                List
               </Button>
             </Typography>
           </div>

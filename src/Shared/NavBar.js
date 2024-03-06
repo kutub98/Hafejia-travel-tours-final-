@@ -6,14 +6,12 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
   List,
   ListItem,
   Menu,
   MenuHandler,
   MenuList,
-  MenuItem,
 } from '@material-tailwind/react';
 import {
   ChevronDownIcon,
@@ -22,6 +20,8 @@ import {
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import logo from '../Assets/logo.png';
+import { signOut, useSession } from 'next-auth/react';
+// import { data } from 'autoprefixer';
 
 const navListMenuItems = [
   {
@@ -45,6 +45,8 @@ const navListMenuItems = [
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { data: session, status } = useSession();
+  console.log(session, 'from session');
   const renderItems = navListMenuItems.map(({ icon, title, link }, key) => (
     <a href={link} key={key}>
       <div className="flex items-center gap-3 ">
@@ -92,6 +94,19 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
+        <div>
+          {session?.user ? (
+            <Typography
+              onClick={() => signOut()}
+              color="white"
+              className="bg-teal-700 text-white max-w-28 text-center mx-auto"
+            >
+              <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+                লগ আউট
+              </ListItem>
+            </Typography>
+          ) : null}
+        </div>
         <MenuList className="hidden max-w-screen-xl bg-[#001719] lg:block">
           <ul className="grid grid-cols-1 gap-y-2 ">{renderItems}</ul>
         </MenuList>

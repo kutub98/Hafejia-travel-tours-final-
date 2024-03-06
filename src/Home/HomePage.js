@@ -22,7 +22,6 @@ const HomePage = () => {
       <HotDeals />
 
       {/* OurService */}
-      
 
       {/* Packge */}
       <Packge />
@@ -31,12 +30,12 @@ const HomePage = () => {
 
       <WhyChoose />
 
-       {/* HappyClient */}
-       <HappyClient />
+      {/* HappyClient */}
+      <HappyClient />
 
-      <Subscribe/>
+      <Subscribe />
       {/* Gellary */}
-     
+
       {/* আমাদের সম্পর্কে */}
       {/* <AboutUs /> */}
     </div>

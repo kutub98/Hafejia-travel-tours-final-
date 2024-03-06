@@ -1,6 +1,6 @@
-// import HomePage from "@/Home/HomePage";
-// import Rootlayout from "@/Layout/Rootlayout";
-// import ImageDisplay from "@/UI/Advertise";
+// import HomePage from "@/Home/HomePage"
+// import Rootlayout from "@/Layout/Rootlayout"
+// import ImageDisplay from "@/UI/Advertise"
 
 // const Home = () => {
 //   return (
@@ -8,18 +8,17 @@
 //       <title>Home || Hafejia Travel Tours</title>
 //       <HomePage></HomePage>
 //     </div>
-//   );
-// };
+//   )
+// }
 
-// export default Home;
+// export default Home
 
 // Home.getLayout = function getLayout(page) {
-//   return <Rootlayout>{page}</Rootlayout>;
-// };
+//   return <Rootlayout>{page}</Rootlayout>
+// }
 
 import HomePage from '@/Home/HomePage';
 import Rootlayout from '@/Layout/Rootlayout';
-import ImageDisplay from '@/UI/Advertise';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const Home = () => {

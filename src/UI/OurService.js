@@ -40,7 +40,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>
@@ -62,7 +62,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>
@@ -84,7 +84,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>
@@ -106,7 +106,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>
@@ -128,7 +128,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>
@@ -150,7 +150,7 @@ const OurService = () => {
             </Typography>
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
-              walk and near to &quot;Naviglio&quot; where you can enjoy the main
+              walk and near to &quotNaviglio&quot where you can enjoy the main
               night life in Barcelona.
             </Typography>
           </CardBody>

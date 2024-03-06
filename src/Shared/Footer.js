@@ -83,7 +83,7 @@ export function Footer() {
           variant="small"
           className="mb-4 text-center font-normal  md:mb-0"
         >
-          &copy; {currentYear}{' '}
+          &copy {currentYear}{' '}
           <a href="https://jmkutub1.web.app/">হাফেজিয়া ট্যুর এন্ড ট্রাভেলস </a>{' '}
           & <a href="https://jmkutub1.web.app/">Kutub Uddin </a>. All Rights
           Reserved.

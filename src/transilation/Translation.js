@@ -5,7 +5,7 @@ const Translation = () => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
-  const handleLanguageChange = (event) => {
+  const handleLanguageChange = event => {
     const newLanguage = event.target.value;
     i18n.changeLanguage(newLanguage);
     setSelectedLanguage(newLanguage);

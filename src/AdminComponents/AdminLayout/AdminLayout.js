@@ -1,5 +1,5 @@
-// import AdminSidbar from '@/AdminComponents/AdminSidebar/AdminSideBar';
-// import React from 'react';
+// import AdminSidbar from '@/AdminComponents/AdminSidebar/AdminSideBar'
+// import React from 'react'
 
 // const AdminLayout = ({ children }) => {
 //   return (
@@ -11,7 +11,7 @@
 //       </div>
 //       <div className="bg-blue-800 text-white">Footer</div>
 //     </div>
-//   );
-// };
+//   )
+// }
 
-// export default AdminLayout;
+// export default AdminLayout
