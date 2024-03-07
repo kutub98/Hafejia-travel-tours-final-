@@ -29,11 +29,7 @@ const LoginCard = () => {
         <div className="flex w-full mx-auto justify-center my-2">
           <BsGoogle
             className="mx-1 h-8 w-8 cursor-pointer"
-            onClick={() =>
-              signIn('google', {
-                callbackUrl: 'https://hafejia-travel-tours.vercel.app',
-              })
-            }
+            onClick={() => signIn('google')}
           />
           <BsFacebook className="mx-1 h-8 w-8 cursor-pointer" />
         </div>
