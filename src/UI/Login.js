@@ -31,7 +31,7 @@ const LoginCard = () => {
             className="mx-1 h-8 w-8 cursor-pointer"
             onClick={() =>
               signIn('google', {
-                callbackUrl: 'http://localhost:3000',
+                callbackUrl: 'https://hafejia-travel-tours.vercel.app',
               })
             }
           />
