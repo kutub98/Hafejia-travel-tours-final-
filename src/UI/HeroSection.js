@@ -19,7 +19,7 @@ const HeroSection = () => {
       showThumbs={false}
       swipeable={false}
       interval={15000} // 5 seconds
-      className="container mx-auto px-5  CustomBg bg-white "
+      className=" mx-auto px-5 max-w-7xl  CustomBg  bg-white"
     >
       <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center  lg:py-6">
         <div className=" px-12 text-left lg:col-span-3 md:col-span-3 ">
@@ -48,7 +48,7 @@ const HeroSection = () => {
               as="a"
               href="https://wa.me/88001867158067"
             >
-              <Button className=" btnTwo bg-gray-100 hover:bg-[#54bfb5] hover:rounded">
+              <Button className=" border border-teal-400  bg-none hover:bg-[#54bfb5] hover:rounded bg-white text-teal-400 hover:text-white">
                 যোগাযোগ
               </Button>
             </Typography>

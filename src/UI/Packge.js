@@ -114,7 +114,7 @@ const Packge = () => {
         {ClinetImage.map((img, index) => (
           <div className="" key={index}>
             <Card className="w-full">
-              <CardHeader floated={false} color="blue-gray" className='h-[150px]'>
+              <CardHeader floated={false} color="blue-gray" className=''>
                 <Image className='w-full h-full' objectFit="contain"  src={img.imgSrc} alt="card" />
                 {/* <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " /> */}
               </CardHeader>

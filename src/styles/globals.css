@@ -223,7 +223,18 @@ span {
 
 @media screen and (min-width: 1020px) {
   .CustomBg {
-    background: url('../Assets/BG/Untitled-1.jpg');
+    background: url('../Assets/BG/Untitled-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding: 40px 0px;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 1019px) {
+  .CustomBg {
+    background: url('../Assets/BG/Untitled-3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

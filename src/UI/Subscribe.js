@@ -4,7 +4,7 @@ import React from 'react';
 const Subscribe = () => {
   return (
     <div className="max-w-xl mx-auto text-center my-32">
-      <h1 className="text-center  font-bold my-8 animate-pulse text-3xl lg:text-5xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">সাবসক্রাইব</h1>
+      <h1 className="text-center  font-bold my-8 animate-pulse text-3xl lg:text-4xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">সাবসক্রাইব</h1>
      
       <div className="max-w-xl mx-auto flex justify-between items-center ">
         <div className="w-3/4">

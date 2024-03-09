@@ -94,7 +94,7 @@ const HappyClient = () => {
   return (
     //
     <div className="container mx-auto max-w-7xl px-8 ">
-      <h1 className="text-center  font-bold my-10 animate-pulse text-3xl lg:text-5xl   rounded-xl lg:w-2/5 justify-center mx-auto ">
+      <h1 className="text-center  font-bold my-10 animate-pulse text-3xl lg:text-4xl   rounded-xl lg:w-2/5 justify-center mx-auto ">
         গ্রাহক সন্তুষ্টি
       </h1>
 
