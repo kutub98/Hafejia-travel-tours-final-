@@ -21,13 +21,13 @@ const HeroSection = () => {
       interval={15000} // 5 seconds
       className="container mx-auto px-5  CustomBg bg-white "
     >
-      <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center  lg:py-16">
+      <div className="grid lg:grid-cols-5 grid-cols-1 md:grid-cols-5  items-center  lg:py-6">
         <div className=" px-12 text-left lg:col-span-3 md:col-span-3 ">
           <h1 className="text-3xl lg:text-4xl font-bold text-blue-gray-800 my-4">
             ভ্রমণ মানুষের মন কে ফ্রেশ রাখে
           </h1>
           <div className="max-w-[450px] text-justify my-5">
-            <h1 className=" text-2xl text-justify">
+            <h1 className=" text-justify">
               হজ্ব, ওমরাহ যেকোন দেশের ভিসা প্রসেসিং, বিমানের টিকিট ও ম্যানপাওয়ার
               কার্ডসহ বিদেশ সংক্রান্ত যেকোন সেবার জন্য হাফেজিয়া ট্যুর এন্ড
               ট্রাভেলস অন্যন্য
@@ -48,7 +48,7 @@ const HeroSection = () => {
               as="a"
               href="https://wa.me/88001867158067"
             >
-              <Button className=" btnThree bg-gray-100 hover:bg-[#54bfb5] hover:rounded">
+              <Button className=" btnTwo bg-gray-100 hover:bg-[#54bfb5] hover:rounded">
                 যোগাযোগ
               </Button>
             </Typography>

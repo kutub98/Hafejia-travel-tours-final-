@@ -94,8 +94,8 @@ const HappyClient = () => {
   return (
     //
     <div className="container mx-auto max-w-7xl px-8 ">
-      <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
-        Happy Clients
+      <h1 className="text-center  font-bold my-10 animate-pulse text-3xl lg:text-5xl   rounded-xl lg:w-2/5 justify-center mx-auto ">
+        গ্রাহক সন্তুষ্টি
       </h1>
 
       <Carousel

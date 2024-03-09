@@ -20,8 +20,8 @@ import Image from 'next/image';
 
 const OurService = () => {
   return (
-    <div className="container mt-10 services max-w-7xl mx-auto bg-white p-2 rounded">
-      <h1 className="text-center text-black lg:text-5xl font-bold lg:mt-32  lg:mb-16 animate-pulse text-3xl ">
+    <div className="container my-20 services max-w-7xl mx-auto bg-white p-2 rounded">
+      <h1 className="text-center  font-bold my-8 animate-pulse text-3xl lg:text-4xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">
         আমাদের সেবা সমূহ
       </h1>
       <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-6 auto px-8">
@@ -46,7 +46,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                 আরো বিস্তারিত...
               </Button>
             </Link>
@@ -68,7 +68,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/passport'}>
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                 আরো বিস্তারিত...
               </Button>
             </Link>
@@ -90,7 +90,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/hazh'}>
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                 আরো বিস্তারিত...
               </Button>
             </Link>
@@ -112,7 +112,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/policeClearenc'} className="bg-[#54bfb5]">
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                আরো বিস্তারিত...
               </Button>
             </Link>
@@ -134,7 +134,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/visaProcess'}>
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                আরো বিস্তারিত...
               </Button>
             </Link>
@@ -156,7 +156,7 @@ const OurService = () => {
           </CardBody>
           <CardFooter className="pt-0">
             <Link href={'/todayPackage'}>
-              <Button className="w-full btnThree hover:bg-[#54bfb5]">
+              <Button className="w-full btnTwo hover:bg-[#54bfb5]">
                আরো বিস্তারিত...
               </Button>
             </Link>

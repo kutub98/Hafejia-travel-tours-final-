@@ -53,7 +53,7 @@ function NavListMenu() {
         <div>
           <Typography
             color="white"
-            className="flex items-center ml-2 hover:bg-blue-gray-100 hover:text-black px-3 py-2  "
+            className="flex items-center ml-2 hover:bg-blue-gray-100 hover:text-black px-3   "
           >
             {title}
           </Typography>
@@ -74,7 +74,7 @@ function NavListMenu() {
         <MenuHandler className="sticky top-0 z-10">
           <Typography as="div" className="">
             <ListItem
-              className="flex items-center gap-2 customHover py-2 pr-4 text-white focus:bg-[#54BFB5] focus:text-white"
+              className="flex items-center gap-2 customHover  pr-4 text-white focus:bg-[#54BFB5] focus:text-white"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(cur => !cur)}
             >
@@ -99,9 +99,9 @@ function NavListMenu() {
             <Typography
               onClick={() => signOut()}
               color="white"
-              className="bg-teal-700 text-white max-w-28 text-center mx-auto"
+              className="btnTwo text-white max-w-28 text-center mx-auto"
             >
-              <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+              <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2  pr-4  ">
                 লগ আউট
               </ListItem>
             </Typography>
@@ -122,7 +122,7 @@ function NavList() {
   return (
     <>
       <div>
-        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-lg">
+        <List className=" lg:mt-0 lg:mb-0 lg:flex-row  text-lg">
           {/* HAZE UMRA  */}
           <Typography
             as="a"
@@ -130,7 +130,7 @@ function NavList() {
             color="white"
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
-            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2 py-2 pr-4 ">
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white items-center gap-2  pr-4 ">
               হজ্ব ও ওমরাহ
             </ListItem>
           </Typography>
@@ -141,7 +141,7 @@ function NavList() {
             color="white"
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
-            <ListItem className="flex items-center gap-2 py-2 pr-4 customHover focus:bg-[#54BFB5] focus:text-white!">
+            <ListItem className="flex items-center gap-2  pr-4 customHover focus:bg-[#54BFB5] focus:text-white!">
               ভিসা প্রসেসিং
             </ListItem>
           </Typography>
@@ -153,7 +153,7 @@ function NavList() {
             color="white"
             className="customHover  focus:bg-[#54BFB5] focus:text-white"
           >
-            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2  pr-4  ">
               বিমান টিকেট
             </ListItem>
           </Typography>
@@ -165,7 +165,7 @@ function NavList() {
             color="white"
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
-            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2  pr-4  ">
               প্যাকেজ
             </ListItem>
           </Typography>
@@ -176,7 +176,7 @@ function NavList() {
             color="white"
             className="customHover focus:bg-[#54BFB5] focus:text-white"
           >
-            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2 py-2 pr-4  ">
+            <ListItem className="flex customHover focus:bg-[#54BFB5] focus:text-white  items-center gap-2  pr-4  ">
               আমাদের সম্পর্কে
             </ListItem>
           </Typography>
@@ -208,19 +208,33 @@ const NavBar = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto w-full overflow-auto py-1 navBar border-none shadow-none rounded-none text-teal-500 px-8 items-center">
-      <div className="flex items-center justify-between text-teal-500">
+    <Navbar
+      style={{
+        margin: ' auto',
+        width: '100%',
+        overflow: 'none',
+        height: openNav ? '100%' : '90px',
+        xl: { height: '80px' },
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: 'none',
+        boxShadow: 'none',
+        borderRadius: 'none',
+        color: 'teal-500',
+        paddingX: '8px',
+      }}
+      className="navBar"
+    >
+      <div className="flex h-full items-center justify-between text-teal-500">
         {/* logo  */}
         <Typography
           as="a"
           href="/"
-          variant="h6"
-          className="mr-4  justify-center items-center my-auto hidden lg:block cursor-pointer  lg:ml-2"
+          className="mr-4  justify-center items-center hidden lg:block cursor-pointer  lg:ml-2"
         >
           <Image
             alt="logo"
-            // objectFit="contain"
-            className=" max-w-[300px] mt-4  h-[100px]  sm:hidden lg:block md:hidden dark:bg-gray-500 "
+            className=" max-w-[300px] mt-6    sm:hidden lg:block md:hidden dark:bg-gray-500 "
             src={logo}
           />
         </Typography>
@@ -228,12 +242,11 @@ const NavBar = () => {
         <Typography
           as="a"
           href="/"
-          variant="h6"
-          className="mr-4  cursor-pointer py-1.5 lg:ml-2 sm:block lg:hidden md:block rounded-full"
+          className="mr-4  cursor-pointer  lg:ml-2 sm:block lg:hidden md:block rounded-full"
         >
           <Image
             alt="logo"
-            className=" max-w-[200px] mt-4 sm:block lg:hidden md:block  dark:bg-gray-500 "
+            className=" max-w-[200px] mt-6 sm:block lg:hidden md:block  dark:bg-gray-500 "
             src={logo}
           />
         </Typography>

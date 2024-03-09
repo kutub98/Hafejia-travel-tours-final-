@@ -61,9 +61,10 @@ const HotDeals = () => {
   ];
 
   return (
-    <div className="container hotDeals mx-auto max-w-7xl px-8">
-      <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10">
-        Hot Deals
+    <div className="container hotDeals mx-auto max-w-7xl px-8 my-10 ">
+            <h1 className="text-center  font-bold my-8 animate-pulse text-3xl lg:text-4xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">
+
+        আকর্ষনীয় অফার
       </h1>
 
       <Carousel
@@ -95,7 +96,7 @@ const HotDeals = () => {
                           className="h-full w-full object-cover"
                         />
                       </CardHeader>
-                      <CardBody className="h-64">
+                      <CardBody className="h-64 text-left ">
                         <Typography
                           variant="h6"
                           color="gray"
@@ -118,7 +119,7 @@ const HotDeals = () => {
                         <Typography as="a" href="/package">
                           <Button
                             variant="text"
-                            className="flex btnThree hover:bg-[#54bfb5] items-center gap-2"
+                            className="flex btnTwo hover:bg-[#54bfb5] items-center gap-2"
                           >
                             আরো বিস্তারিত...
                             <svg

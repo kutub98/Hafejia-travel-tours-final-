@@ -106,17 +106,17 @@ const Packge = () => {
     //     ))}
     //   </Carousel>
     // </div>
-    <div className=" max-w-7xl  p-2 rounded mx-auto container bg-white my-32">
-      <h1 className="text-center  lg:text-4xl font-bold xl:mt-36 lg:mt-36 lg:mb-24 animate-pulse text-3xl my-10  rounded-xl lg:w-2/5 justify-center mx-auto ">
+    <div className=" max-w-7xl  p-2 rounded mx-auto container my-20 bg-white ">
+      <h1 className="text-center  lg:text-4xl font-bold my-8 animate-pulse text-3xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">
         আমাদের প্যাকেজ সমূহ
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-auto">
         {ClinetImage.map((img, index) => (
-          <div className=" mx-auto" key={index}>
-            <Card className="w-full lg:max-w-[26rem] max-w-[20rem] shadow-lg hover:bg-gray-100">
-              <CardHeader floated={false} color="blue-gray">
-                <Image src={img.imgSrc} alt="card" />
-                <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
+          <div className="" key={index}>
+            <Card className="w-full">
+              <CardHeader floated={false} color="blue-gray" className='h-[150px]'>
+                <Image className='w-full h-full' objectFit="contain"  src={img.imgSrc} alt="card" />
+                {/* <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " /> */}
               </CardHeader>
               <div className=" hover:text-white hover:duration-500">
                 <CardBody>
@@ -155,7 +155,7 @@ const Packge = () => {
                 </CardBody>
                 <CardFooter className="pt-3">
                   <Typography as="a" href="/package">
-                    <Button size="lg" fullWidth={true}>
+                    <Button className="btnTwo" size="lg" fullWidth={true}>
                       আরো বিস্তারিত...
                     </Button>
                   </Typography>

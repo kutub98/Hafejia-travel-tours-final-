@@ -33,7 +33,8 @@ h4,
 h5,
 h6,
 p,
-button ,span {
+button,
+span {
   font-family: 'Tiro Bangla', serif !important;
 }
 
@@ -63,7 +64,7 @@ button ,span {
 }
 
 .btnTwo {
-  background-color: #499ebf;
+  background-color: #105773e4;
   color: white;
 }
 .btnThree {
@@ -219,19 +220,15 @@ button ,span {
   width: 100%;
   padding: 40px 0px;
 }
-/* .CustomBg {
-  background: url('../Assets/BG/3.webp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: auto;
-  width: 100%;
-  padding: 40px 0px;
-} */
 
-/* @media screen and (min-width: 100px) and (max-width: 632px) {
-.lottiLogo{
-  left: 169px;
-  top: 113px;
+@media screen and (min-width: 1020px) {
+  .CustomBg {
+    background: url('../Assets/BG/Untitled-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding: 40px 0px;
+  }
 }
-} */

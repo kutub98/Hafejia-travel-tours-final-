@@ -17,7 +17,7 @@ function App({ session, Component, pageProps }) {
 
 export default appWithTranslation(App);
 
-// // Assuming you're working in pages/_app.js
+// Assuming you're working in pages/_app.js
 
 // import '@/styles/globals.css'
 // import './sidebar/sidebar.css'

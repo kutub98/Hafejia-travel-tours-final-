@@ -7,9 +7,9 @@ import {
   ListItemPrefix,
   Accordion,
 } from '@material-tailwind/react';
-import { Cog6ToothIcon } from '@heroicons/react/24/solid';
 import { FaChalkboardUser } from 'react-icons/fa6';
-import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import { Heater } from 'lucide-react';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { PiFlagBannerFill } from 'react-icons/pi';
 import { RxDashboard } from 'react-icons/rx';
 import { FaClipboardList, FaHotjar } from 'react-icons/fa';
@@ -18,21 +18,20 @@ import HomePage from '@/Home/HomePage';
 import ABanner from '@/AdminComponents/ABanner';
 import ClineImage from '@/AdminComponents/HappyClients';
 import ARecentPackage from '@/AdminComponents/ARecentPackage';
-import Aservice from '@/AdminComponents/AService';
 import AHotDeals from '@/AdminComponents/AhotDeals';
 import AGallery from '@/AdminComponents/AGallery';
 import { Tooltip } from '@material-tailwind/react';
-import { BsArrowBarUp, BsShieldPlus } from 'react-icons/bs';
 import { FaBars } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Aservices from '@/AdminComponents/AService';
 import BannerList from '@/AdminComponents/ABanner/BannerList';
-import { LuSettings } from 'react-icons/lu';
+import { LuFileBox, LuImage, LuPackagePlus, LuServerCog, LuSettings } from 'react-icons/lu';
 import ServiceList from '@/AdminComponents/AService/ServiceList';
 import HotDealsList from '@/AdminComponents/AhotDeals/AhotDealsList';
 import PackageList from '@/AdminComponents/ARecentPackage/PackageList';
 import GalleryList from '@/AdminComponents/AGallery/GalleryList';
 import ClientImageList from '@/AdminComponents/HappyClients/ClientImgList';
+
 const SidebarWithContentSeparator = () => {
   const [open, setOpen] = React.useState(0);
   const [selectedContent, setSelectedContent] = useState('Home');
@@ -88,29 +87,29 @@ const SidebarWithContentSeparator = () => {
   return (
     <div className="flex max-w-7xl container mx-auto">
       <Card
-        className={`h-[calc(100vh)]  ${
+        className={` h-screen ${
           hideIconText
-            ? 'w-full max-w-[18rem]'
-            : 'w-full max-w-[6rem] text-center justify-center'
+            ? 'w-full max-w-[18rem] transition-all ease-in '
+            : 'w-full max-w-[6rem] transition-all ease-out'
         } p-4 shadow-xl shadow-blue-gray-900/5  fixed top-0 left-0 bg-blue-gray-900 overflow-y-scroll`}
         style={{
-          maxHeight: 'calc(100vh)',
+          maxHeight: 'h-screen',
           overflowY: 'scroll',
           scrollbarWidth: 'thin',
           scrollbarColor: 'transparent transparent',
         }}
       >
-        <div className=" flex justify-end sticky   right-2 z-50 top-0 rounded-full  ">
+        <div className=" flex justify-end sticky   right-2 z-50 top-0 rounded-full  mb-0">
           {hideIconText ? (
             <div
-              className=" rounded-full transition-transform  bg-white cursor-pointer flex justify-center items-center"
+              className=" rounded-full   bg-white cursor-pointer flex justify-center items-center transition-all ease-intransition-all ease-in"
               onClick={() => HandleHideIcon(hideIconText)}
             >
               <IoIosArrowBack className="h-10 w-10 p-2" />
             </div>
           ) : (
             <div
-              className=" flex my-auto rounded-full text-center justify-center  transition-all bg-white cursor-pointer items-center "
+              className=" rounded-full transition-transform  bg-white cursor-pointer flex justify-center items-center"
               onClick={() => HandleHideText(hideIconText)}
             >
               <FaBars className="h-10 w-10 p-2" />
@@ -132,7 +131,7 @@ const SidebarWithContentSeparator = () => {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
+                className={`mx-auto h-4 w-4 transition-transform transition-all ${
                   open === 1 ? 'rotate-180' : ''
                 }`}
               />
@@ -227,7 +226,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('BannerList')}
                 >
                   <ListItemPrefix>
-                    <PiFlagBannerFill className="h-5 w-5 -ml-1" />
+                  <FaClipboardList className="h-5 w-5" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -259,7 +258,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('services')}
                 >
                   <ListItemPrefix>
-                    <PiFlagBannerFill className="h-5 w-5 -ml-1" />
+                  <LuSettings className="h-5 w-5" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -276,7 +275,8 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('ServiceList')}
                 >
                   <ListItemPrefix>
-                    <LuSettings className="h-5 w-5" />
+                
+                    <LuServerCog className="h-5 w-5  -ml-1" />
                   </ListItemPrefix>
                   Service List
                 </ListItem>
@@ -290,7 +290,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('ServiceList')}
                 >
                   <ListItemPrefix>
-                    <PiFlagBannerFill className="h-5 w-5 -ml-1" />
+                    <LuServerCog className="h-5 w-5 -ml-1" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -308,6 +308,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('clientImg')}
                 >
                   <ListItemPrefix>
+                    {/* <Image className="h-5 w-5" src="../../Assets/icons/image.png" alt='Icon'/> */}
                     <FaChalkboardUser className="h-5 w-5" />
                   </ListItemPrefix>
                   Clients Image
@@ -360,7 +361,7 @@ const SidebarWithContentSeparator = () => {
             </Tooltip>
 
             {/* প্যাকেজস  */}
-            <Tooltip content="প্যাকেজস" placement="right">
+            <Tooltip content="Package" placement="right">
               {hideIconText ? (
                 <ListItem
                   className={`cursor-pointer flex items-center px-4 py-3 rounded my-2 transition-all duration-1000   ${
@@ -371,9 +372,10 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('recentPackage')}
                 >
                   <ListItemPrefix>
-                    <RxDashboard className="h-5 w-5" />
+                    
+                    <LuPackagePlus className="h-5 w-5" />
                   </ListItemPrefix>
-                  প্যাকেজস
+                  Package
                 </ListItem>
               ) : (
                 <ListItem
@@ -384,8 +386,9 @@ const SidebarWithContentSeparator = () => {
                   }  `}
                   onClick={() => selectContent('recentPackage')}
                 >
-                  <ListItemPrefix>
-                    <RxDashboard className="h-5 w-5 -ml-1" />
+                    <ListItemPrefix>
+                      
+                    <LuPackagePlus className="h-5 w-5" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -402,9 +405,10 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('PackageList')}
                 >
                   <ListItemPrefix>
-                    <RxDashboard className="h-5 w-5" />
+                    
+                    <LuFileBox className="h-5 w-5" />
                   </ListItemPrefix>
-                  প্যাকেজস List
+                  Package list
                 </ListItem>
               ) : (
                 <ListItem
@@ -416,7 +420,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('PackageList')}
                 >
                   <ListItemPrefix>
-                    <RxDashboard className="h-5 w-5 -ml-1" />
+                  <LuFileBox className="h-5 w-5" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -465,7 +469,8 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('HotDealsList')}
                 >
                   <ListItemPrefix>
-                    <FaHotjar className="h-5 w-5" />
+                    
+                    <Heater className="h-5 w-5" />
                   </ListItemPrefix>
                   Hot Deals list
                 </ListItem>
@@ -479,7 +484,7 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('HotDealsList')}
                 >
                   <ListItemPrefix>
-                    <FaHotjar className="h-5 w-5 -ml-1" />
+                    <Heater className="h-5 w-5 -ml-1" />
                   </ListItemPrefix>
                 </ListItem>
               )}
@@ -497,7 +502,8 @@ const SidebarWithContentSeparator = () => {
                   onClick={() => selectContent('gallery')}
                 >
                   <ListItemPrefix>
-                    <TfiGallery className="h-5 w-5" />
+                    
+                    <LuImage className="h-5 w-5" />
                   </ListItemPrefix>
                   Gallery
                 </ListItem>

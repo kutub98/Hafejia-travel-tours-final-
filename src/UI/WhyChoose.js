@@ -15,7 +15,7 @@ import { Button } from '@material-tailwind/react';
 const WhyChoose = () => {
   return (
     <div className=" max-w-7xl mx-auto px-6  bg-gray-50 pb-10 pt-1">
-      <h1 className="text-center  lg:text-5xl font-bold xl:mt-36 lg:mt-36 lg:mb-12 animate-pulse text-3xl my-10">
+      <h1 className="text-center  font-bold my-8 animate-pulse text-3xl lg:text-4xl my-2  rounded-xl lg:w-2/5 justify-center mx-auto ">
         আমাদের কেন বেঁচে নিবেন?
       </h1>
       <div className="text-center flex justify-center items-center ">
