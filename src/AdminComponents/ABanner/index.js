@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { PencilIcon, UserPlusIcon } from '@heroicons/react/24/solid';
+
 import {
   Card,
   Input,
@@ -12,46 +13,27 @@ import {
 } from '@material-tailwind/react';
 import { IoAddCircle } from 'react-icons/io5';
 import { LuDelete } from 'react-icons/lu';
+
 const ABanner = () => {
   const [formData, setFormData] = useState([]);
-
-  const AddOneHotDealsOffer = () => {
+  const addOneBanner = () => {
     const newRow = {
       serialNumber: formData.length + 1,
       img: '',
       BannerName: '',
-      BannerDetails: '',
+      BannerDetailse: '',
     };
     setFormData([...formData, newRow]);
   };
 
-  // input changes
-
   const handleInputChange = (index, field, e) => {
     const updatedFormData = [...formData];
-
     if (field === 'img') {
-      const fileInput = e.target;
-      const file = fileInput.files[0];
-
-      const reader = new FileReader();
-
-      reader.onloadend = () => {
-        updatedFormData[index][field] = reader.result;
-        setFormData(updatedFormData);
-
-        // Clear the file input after reading its value
-        fileInput.value = '';
-      };
-
-      if (file) {
-        reader.readAsDataURL(file);
-      }
+      updatedFormData[index][field] = e.target.files[0]; // Store File object
     } else {
-      // For non-file input fields
       updatedFormData[index][field] = e.target.value;
-      setFormData(updatedFormData);
     }
+    setFormData(updatedFormData);
   };
 
   const deleteRow = index => {
@@ -61,10 +43,66 @@ const ABanner = () => {
     setFormData(updateLength);
   };
 
-  const handleSumbiFormData = event => {
-    event.preventDefault();
-    console.log(formData);
+  const uploadImageToImgBB = async file => {
+    const formData = new FormData();
+    formData.append('image', file);
+
+    try {
+      const response = await fetch(
+        `https://api.imgbb.com/1/upload?key=eabfc704d2e8635a3a4a57426aa9487b`,
+        {
+          method: 'POST',
+          body: formData,
+        },
+      );
+      const data = await response.json();
+      return data.data.url;
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      return '';
+    }
   };
+
+  const handleSumbiFormData = async event => {
+    event.preventDefault();
+    const promises = formData.map(async (row, index) => {
+      if (row.img && typeof row.img !== 'string') {
+        const imgUrl = await uploadImageToImgBB(row.img);
+        return { ...row, img: imgUrl };
+      }
+      return row;
+    });
+
+    const formDataWithImgUrls = await Promise.all(promises);
+
+    const bannerInfo = formDataWithImgUrls.map(row => ({
+      img: row.img,
+      BannerName: row?.BannerName,
+      BannerDetailse: row?.BannerDetailse,
+    }));
+
+    console.log(bannerInfo, 'BANNER INFO');
+
+    const submitBanner = async bannerInfo => {
+      try {
+        const response = fetch('http://localhost:5000/api/v1/banner', {
+          method: 'POST',
+
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(bannerInfo),
+        });
+
+        console.log(response);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    submitBanner(bannerInfo);
+  };
+
   return (
     <div className="mx-auto w-full bg-gray-50 sm:p-8">
       <div className="flex flex-col sm:flex-row justify-between">
@@ -72,7 +110,7 @@ const ABanner = () => {
           Add a Banner
         </h1>
 
-        <div onClick={AddOneHotDealsOffer}>
+        <div onClick={addOneBanner}>
           <Tooltip content=" Add a Banner">
             <Button className="flex items-center gap-3" size="sm">
               <IoAddCircle strokeWidth={2} className="h-4 w-4" />
@@ -148,7 +186,7 @@ const ABanner = () => {
                           {row.img && (
                             <img
                               src={row.img}
-                              alt={`Preview ${row.BannerName}`}
+                              alt="Hafejia"
                               className="px-2"
                               style={{ maxWidth: '100px', maxHeight: '200px' }}
                             />
@@ -181,11 +219,11 @@ const ABanner = () => {
                         <td className="mx-3 ">
                           <Input
                             type="textarea"
-                            value={row?.BannerDetails}
+                            value={row?.BannerDetailse}
                             label="Banner Details"
                             className="w-full"
                             onChange={e =>
-                              handleInputChange(index, 'BannerDetails', e)
+                              handleInputChange(index, 'BannerDetailse', e)
                             }
                           />
                         </td>

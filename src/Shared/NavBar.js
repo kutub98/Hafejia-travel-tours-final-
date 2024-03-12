@@ -219,7 +219,7 @@ const NavBar = () => {
         alignItems: 'center',
         border: 'none',
         boxShadow: 'none',
-        borderRadius: 'none',
+        borderRadius: '0px',
         color: 'teal-500',
         paddingX: '8px',
       }}

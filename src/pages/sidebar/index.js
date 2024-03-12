@@ -25,12 +25,13 @@ import { FaBars } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Aservices from '@/AdminComponents/AService';
 import BannerList from '@/AdminComponents/ABanner/BannerList';
-import { LuFileBox, LuImage, LuPackagePlus, LuServerCog, LuSettings } from 'react-icons/lu';
+import { LuFileBox, LuImage, LuPackagePlus, LuServerCog, LuSettings, LuUserPlus } from 'react-icons/lu';
 import ServiceList from '@/AdminComponents/AService/ServiceList';
 import HotDealsList from '@/AdminComponents/AhotDeals/AhotDealsList';
 import PackageList from '@/AdminComponents/ARecentPackage/PackageList';
 import GalleryList from '@/AdminComponents/AGallery/GalleryList';
 import ClientImageList from '@/AdminComponents/HappyClients/ClientImgList';
+import AddUser from '@/AdminComponents/User/AddUser';
 
 const SidebarWithContentSeparator = () => {
   const [open, setOpen] = React.useState(0);
@@ -64,6 +65,8 @@ const SidebarWithContentSeparator = () => {
         return <AGallery className="transition-all duration-500" />;
       case 'galleryList':
         return <GalleryList className="transition-all duration-500" />;
+      case 'addUser':
+        return <AddUser className="transition-all duration-500" />;
       default:
         return null;
     }
@@ -89,8 +92,8 @@ const SidebarWithContentSeparator = () => {
       <Card
         className={` h-screen ${
           hideIconText
-            ? 'w-full max-w-[18rem] transition-all ease-in '
-            : 'w-full max-w-[6rem] transition-all ease-out'
+            ? 'w-full max-w-[18rem] transition-all ease-in  z-[999]'
+            : 'w-full max-w-[6rem] transition-all ease-out z-[999]'
         } p-4 shadow-xl shadow-blue-gray-900/5  fixed top-0 left-0 bg-blue-gray-900 overflow-y-scroll`}
         style={{
           maxHeight: 'h-screen',
@@ -549,6 +552,38 @@ const SidebarWithContentSeparator = () => {
                 >
                   <ListItemPrefix>
                     <TfiGallery className="h-5 w-5 -ml-1" />
+                  </ListItemPrefix>
+                </ListItem>
+              )}
+            </Tooltip>
+
+            {/* addUser  */}
+            <Tooltip content="addUser" placement="left">
+              {hideIconText ? (
+                <ListItem
+                  className={`cursor-pointer flex items-center px-4 py-3 rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'addUser'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('addUser')}
+                >
+                  <ListItemPrefix>
+                    <LuUserPlus className="h-5 w-5" />
+                  </ListItemPrefix>
+                 Add User
+                </ListItem>
+              ) : (
+                <ListItem
+                  className={`cursor-pointer w-10 rounded my-2 transition-all duration-1000   ${
+                    selectedContent === 'addUser'
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-50 text-blue-gray-800'
+                  }  `}
+                  onClick={() => selectContent('addUser')}
+                >
+                  <ListItemPrefix>
+                    <LuUserPlus className="h-5 w-5 -ml-1" />
                   </ListItemPrefix>
                 </ListItem>
               )}
