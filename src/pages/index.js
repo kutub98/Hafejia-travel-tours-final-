@@ -33,8 +33,7 @@ const Home = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      // The serverSideTranslations function is responsible for loading the
-      // necessary translation files for the current locale.
+      
       ...(await serverSideTranslations(locale, ['common', 'homepage'])),
     },
   };
